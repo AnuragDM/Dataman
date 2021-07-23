@@ -1,0 +1,6 @@
+WefDate*,ItemSyncId*,MRP,DP,RP
+Datetime(dd/mm/yyyy),varchar(50),"Numeric(18,2)","Numeric(18,2)","Numeric(18,2)"
+14/11/2015,9000,1,11,111
+14/11/2015,9001,2,22,222
+14/11/2015,9002,3,33,333
+14/11/2015,2000,4,44,444

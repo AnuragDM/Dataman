@@ -1,0 +1,477 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FFMS.master.cs" Inherits="AstralFFMS.FFMS" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+        <link href="Content/bootstrap.css" rel="stylesheet" />
+        <link href="Content/bootstrap.min.css" rel="stylesheet" />
+        <link href="plugins/datatables/dataTables.bootstrap.css" rel="stylesheet" />
+
+        <link href="Content/bootstrap-responsive.css" rel="stylesheet" />
+        <link href="Content/bootstrap-responsive.min.css" rel="stylesheet" />
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <link href="dist/css/AdminLTE.css" rel="stylesheet" />
+        <link href="dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+        <script src="plugins/jQuery/jQuery-2.1.4.min.js" type="text/javascript"></script>
+        <!-- Bootstrap 3.3.2 JS -->
+        <script src="dist/js/bootstrap.min.js"></script>
+        <!-- FastClick -->
+        <script src="plugins/fastclick/fastclick.min.js" type="text/javascript"></script>
+        <!-- AdminLTE App -->
+        <script src="dist/js/app.min.js" type="text/javascript"></script>
+        <!-- AdminLTE for demo purposes -->
+        <%-- <script src="dist/js/demo.js" type="text/javascript"></script>--%>
+        <!-- Custom Style Sheet  -->
+        <link href="Content/style.css" rel="stylesheet" />
+
+        <link href="jqwidgets/styles/jqx.base.css" rel="stylesheet" />
+        <script src="jqwidgets/jqxcore.js" type="text/javascript"></script>
+        <script type="text/javascript" src="jqwidgets/jqxdata.js"></script>
+        <script type="text/javascript" src="jqwidgets/jqxbuttons.js"></script>
+        <script type="text/javascript" src="jqwidgets/jqxscrollbar.js"></script>
+        <script type="text/javascript" src="jqwidgets/jqxmenu.js"></script>
+        <script type="text/javascript" src="jqwidgets/jqxgrid.js"></script>
+        <script type="text/javascript" src="jqwidgets/jqxgrid.pager.js"></script>
+        <script type="text/javascript" src="jqwidgets/jqxgrid.columnsresize.js"></script>
+        <script type="text/javascript" src="jqwidgets/jqxwindow.js"></script>
+        <script type="text/javascript" src="jqwidgets/jqxlistbox.js"></script>
+        <script type="text/javascript" src="jqwidgets/jqxdropdownlist.js"></script>
+        <script type="text/javascript" src="jqwidgets/jqxinput.js"></script>
+        <script type="text/javascript" src="jqwidgets/jqxgrid.filter.js"></script>
+        <script type="text/javascript" src="jqwidgets/jqxgrid.sort.js"></script>
+        <script type="text/javascript" src="jqwidgets/jqxpanel.js"></script>
+        <script type="text/javascript" src="jqwidgets/globalization/globalize.js"></script>
+        <script type="text/javascript" src="jqwidgets/jqxgrid.selection.js"></script>
+        <script type="text/javascript" src="jqwidgets/jqxgrid.grouping.js"></script>
+        <script type="text/javascript" src="jqwidgets/demos.js"></script>
+        <script type="text/javascript" src="jqwidgets/jqxnotification.js"></script>
+        <script type="text/javascript" src="jqwidgets/jqxgrid.aggregates.js"></script>
+        <script type="text/javascript" src="jqwidgets/jqxdata.export.js"></script>
+        <script type="text/javascript" src="jqwidgets/jqxgrid.export.js"></script>
+
+        <link href="//db.onlinewebfonts.com/c/245ab95ddac264a1ecf3536279b93e19?family=Aquitaine+Initials" rel="stylesheet" type="text/css"/>
+
+        <link href="jqwidgets/styles/jqtimepicker.css" rel="stylesheet" />
+        <script src="jqwidgets/jqtimepicker.js" type="text/javascript"></script>
+
+
+
+        <style>
+            body, html {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+        <style>
+            .buttonAdd {
+                background: url(/img/add.png) no-repeat;
+                cursor: pointer;
+                border: none;
+                width: 100px;
+                height: 32px;
+            }
+           
+        </style>
+    </asp:ContentPlaceHolder>
+</head>
+<body class="skin-blue sidebar-mini sidebar-collapse">
+    <form id="form1" runat="server">
+        <script>
+
+            window.onload = function () {
+                //startTime();
+              //  HideLabel();
+                formatAMPM();
+            };
+            function formatAMPM() {
+                var d = new Date(),
+                    minutes = d.getMinutes().toString().length == 1 ? '0' + d.getMinutes() : d.getMinutes(),
+                  //  hours = d.getHours().toString().length == 1 ? '0' + d.getHours() : d.getHours(),
+                    hours = d.getHours() > 12 ? d.getHours() - 12 : d.getHours();
+                seconds = d.getSeconds() < 10 ? "0" + d.getSeconds() : d.getSeconds();
+                ampm = d.getHours() >= 12 ? 'pm' : 'am',
+                months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+                document.getElementById('lblTime').innerHTML = days[d.getDay()] + ',' + months[d.getMonth()] + ' ' + d.getDate() + ' ' + d.getFullYear() + ',' + hours + ':' + minutes + ':' + seconds + ampm;
+                //   document.getElementById('lblTime').innerHTML = formatAMPM();
+                var t = setTimeout(formatAMPM, 500);
+            }
+            // function startTime() {
+            ////     https://www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock
+            //     var today = new Date();
+            //     var h = today.getHours();
+            //     var m = today.getMinutes();
+            //     var s = today.getSeconds();
+            //     m = checkTime(m);
+            //     s = checkTime(s);
+            //     document.getElementById('lblTime').innerHTML =
+            //     h + ":" + m + ":" + s;
+            //     var t = setTimeout(startTime, 500);
+            // }
+            // function checkTime(i) {
+            //     if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+            //     return i;
+            // }
+            function autoRefresh_div() {
+                $("#result").load(" #result");// a function which will load data from other file after x seconds
+            }
+            //       setInterval('autoRefresh_div()', 5000); // refresh div after 5 secs
+        </script>
+        <script src="plugins/jquery.numeric.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".numeric").numeric({ negative: false });
+                // $("body").addClass('sidebar-mini');
+                $("body").addClass('sidebar-collapse');
+
+
+
+            });
+            //disable popup greeting
+            function HideLabel() {
+                var seconds = 3;
+                setTimeout(function () {
+                    document.getElementById("<%=pnlPopup.ClientID %>").style.display = "none";
+                }, seconds * 1000);
+            };
+
+        </script>
+        <script type="text/javascript">
+            function callMyFunction(val) {
+                $.ajax({
+                    type: "POST",
+                    url: '<%= ResolveUrl("Home.aspx/UpdateTransNotification") %>',
+                    contentType: "application/json; charset=utf-8",
+                    data: '{notID: "' + val + '"}',
+                    dataType: "json",
+                    success: function (savingStatus) {
+                    }
+                });
+            }
+        </script>
+        <link href="Content/ajaxcalendar.css" rel="stylesheet" />
+        <style type="text/css">
+            .messagelabel {
+                background-color: #c7c5c6;
+            }
+
+            .messagelabel1 {
+                background-color: #ffffff;
+            }
+
+            .completionList {
+                border: solid 1px Gray;
+                margin: 0px;
+                padding: 3px;
+                overflow: auto;
+                overflow-y: scroll;
+                background-color: #FFFFFF;
+                max-height: 180px;
+            }
+
+            .listItem {
+                color: #191919;
+            }
+
+            .itemHighlighted {
+                background-color: #ADD6FF;
+            }
+
+            .user-panel > .info {
+                position: static;
+            }
+
+            .user-panel > .image > img {
+                max-width: 105px;
+                height: initial;
+            }
+
+            .navbar-nav > .notifications-menu > .dropdown-menu > li .menu > li > a {
+                white-space: normal;
+            }
+
+            .quicklink-cont1 {
+                background: #f3f3f3 none repeat scroll 0 0;
+                border-radius: 50px;
+                height: 30px;
+                min-width: 90%;
+                border-width: 0px;
+                color: #444;
+                white-space: normal;
+                margin-left: 4px;
+                margin-bottom: 15px;
+            }
+
+            @media (max-width: 600px) {
+                .dropdown-notification {
+                    right: 0 !important;
+                    width: 100% !important;
+                }
+            }
+
+            @media (min-width:600px) {
+                .dropdown-notification {
+                    width: 320px !important;
+                }
+            }
+        </style>
+
+        <%--         <script type="text/javascript">
+        $(function () {
+            //Initialize Select2 Elements
+            $(".select2").select2();
+        });
+    </script>--%>
+        <div class="wrapper">
+            <header class="main-header">
+                <!-- Logo -->
+                <a href="Home.aspx" class="logo">
+                    <!-- mini logo for sidebar mini 50x50 pixels -->
+                    <span class="logo-mini"><b><asp:Image ID="Image1" style="width:50px" runat="server"   /></b></span>
+                    <!-- logo for regular state and mobile devices -->
+                    <%--<span class="logo-lg"><b>ASTRAL CRM</b></span>--%>
+                    <span class="logo-lg" >
+                           <asp:Image ID="logoimg" runat="server" style="height: 35px;"  /></span>
+                    <%--<span class="logo-lg" style="font-family:AquitaineInitialsPlain"><b>Grahaak</b></span>--%>
+
+                </a>
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <div class="navbar-custom-menu" runat="server" id="result">
+                        <ul class="nav navbar-nav">
+                            <!-- Messages: style can be found in dropdown.less-->
+                            <!-- Tasks: style can be found in dropdown.less -->
+                            <!-- User Account: style can be found in dropdown.less -->
+                            <%-- <li class="notifications-menu">
+                                <a href="MainDashboard.aspx" style="font-size: 1.5em;"><i class="fa fa-tachometer" aria-hidden="true"></i></a>
+                            </li>--%>
+                            <%-- <li class="notifications-menu">
+                                <a href="Home.aspx" style="font-size: 1.5em;"><i class="fa fa-home"></i></a>
+                            </li>--%>
+
+                            <li runat="server" id="lidist" class="dropdown notifications-menu">
+
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-bell-o"></i>
+                                    <span class="label label-warning">
+                                        <asp:Label ID="msgcountLabel" runat="server"></asp:Label></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-notification" style="">
+                                    <li class="header">
+                                        <asp:Label ID="notifications" runat="server"></asp:Label></li>
+                                    <li>
+                                        <!-- inner menu: contains the actual data -->
+                                        <ul class="menu">
+                                            <asp:Repeater ID="Repeater1" runat="server">
+                                                <ItemTemplate>
+                                                    <li class="<%#setClass(Convert.ToInt32(Eval("Status")))%>">
+                                                        <a href="<%# String.Format("/"+ Eval("msgURL")) %>" onclick='<%# "callMyFunction(" +Eval("NotiId") + " );" %>'>
+                                                            <i class="fa fa-user"></i><%#Eval("displayTitle") +" , "+Eval("V1Date","{0:dd/MMM/yyyy}") +" "+ Eval("V1Time")%>
+                                                        </a>
+                                                    </li>
+                                                </ItemTemplate>
+                                            </asp:Repeater>
+                                        </ul>
+                                    </li>
+                                    <li class="footer"><a href="ViewAllMessages.aspx">View all</a></li>
+                                </ul>
+                                <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                                    <ContentTemplate>
+                                        <asp:Timer ID="Timer1" runat="server" Interval="150000" OnTick="Timer1_Tick"></asp:Timer>
+                                    </ContentTemplate>
+                                </asp:UpdatePanel>
+
+                            </li>
+
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding-left: 30px; padding-right: 31px; padding-top: 0px">
+                                    <span class="">
+                                         <%--<asp:Label ID="Label4" runat="server" Text='<%# Session["user_name"].ToString() %>'></asp:Label>--%>
+                                        <asp:Label ID="Label4" runat="server"></asp:Label><br />
+                                        <asp:Label class="pull-right" ID="lblTime" runat="server" ForeColor="White" />
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu" style="width: 20%">
+                                    <!-- Menu Footer-->
+                                    <li class="user-footer">
+                                        <div class="">
+                                            <a href="changepassword.aspx" class="btn btn-default btn-flat" style="width: 125px;">Change Password</a><br />
+                                            <a href="logout.aspx" class="btn btn-default btn-flat" style="width: 125px; text-align: center; margin-top: 5px;">Sign Out</a>
+                                        </div>
+                                        <div class="">
+                                            <%--<a href="logout.aspx" class="btn btn-default btn-flat">Sign Out</a>--%>
+                                            <%--<asp:Button ID="logoutButton" runat="server" class="btn btn-default btn-flat" Text="Sign out" OnClick="logoutButton_Click" />--%>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Control Sidebar Toggle Button -->
+                            <li>
+                                <%-- <a href="#" data-toggle="control-sidebar" title="Quick Links"><i class="fa fa-gears"></i></a>--%>
+                            </li>
+                        </ul>
+                        <%--time current---%>
+                    </div>
+                </nav>
+            </header>
+            <aside class="main-sidebar">
+                <section class="sidebar">
+                    <!-- Sidebar user panel -->
+                    <div class="user-panel">
+                        <div class="pull-left image">
+                            <%--<img src="img/astralSalman1.jpg" height="100px" width="100px" class="img-circle" alt="User Image" />--%>
+                            <asp:Image ID="ImageMasterPage" runat="server" Height="70%" Width="70%" class="img-circle" alt="User Image" />
+                        </div>
+
+                    </div>
+                    <!-- search form -->
+                    <%-- <form action="#" method="get" class="sidebar-form">
+                        <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="Search..." />
+                            <span class="input-group-btn">
+                                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+                            </span>
+                        </div>
+                    </form>--%>
+                    <!-- /.search form -->
+                    <!-- sidebar menu: : style can be found in sidebar.less -->
+                    <ul class="sidebar-menu" id="LSidebar" runat="server">
+                    </ul>
+
+                </section>
+            </aside>
+
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper ">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <!-- /.content-wrapper -->
+
+            <footer class="main-footer">
+                <div class="pull-right">
+                    <b>Version</b> 1.0
+                </div>
+                <%--<strong>Copyright &copy; 2015</strong> ASTRAL  POLY TECHNIK LTD.
+                    </a>All rights reserved.--%>
+                <strong>Copyright &copy; 2015</strong> DATAMAN COMPUTER SYSTEMS (P) LTD. KANPUR, (INDIA)
+                    </a>All rights reserved.
+            </footer>
+            <aside class="control-sidebar control-sidebar-dark hidden" style="display:none">
+                <!-- Create the tabs -->
+                <!-- Tab panes -->
+                <div class="tab-content" id="quickLinkTab" style="display: none;" runat="server">
+                    <!-- Home tab content -->
+                    <div class="tab-pane active">
+                        <p style="text-align: center;">
+                            <h3>Quick Links</h3>
+                        </p>
+                        <div class="menu-info">
+                            <asp:Button ID="DSREntry" Style="margin-right: 5px;" runat="server" CssClass="quicklink-cont1"
+                                Text="DSR Entry" OnClick="DSREntry_Click" />
+                            <asp:Button ID="DistOrder" Style="margin-right: 5px;" runat="server" CssClass="quicklink-cont1"
+                                Text="Distributor Order" OnClick="DistOrder_Click" />
+                            <asp:Button ID="BeatEntry" Style="margin-right: 5px;" runat="server" CssClass="quicklink-cont1"
+                                Text="Beat Plan Entry" OnClick="BeatEntry_Click" />
+                            <asp:Button ID="Downloads" Style="margin-right: 5px;" runat="server" CssClass="quicklink-cont1"
+                                Text="Downloads" OnClick="Downloads_Click" />
+                            <asp:Button ID="LocalExp" Style="margin-right: 5px;" runat="server" CssClass="quicklink-cont1"
+                                Text="Local Expense" OnClick="LocalExp_Click" />
+                        </div>
+                        <!-- /.control-sidebar-menu -->
+                    </div>
+                    <!-- /.tab-pane -->
+                </div>
+                <div class="tab-content" id="quickLinkTabL2" style="display: none;" runat="server">
+                    <!-- Home tab content -->
+                    <div class="tab-pane active">
+                        <p style="text-align: center;">
+                            <h3>Quick Links</h3>
+                        </p>
+                        <div class="menu-info">
+                            <asp:Button ID="DSREntryL2" Style="margin-right: 5px;" runat="server" CssClass="quicklink-cont1"
+                                Text="DSR Entry" OnClick="DSREntryL2_Click" />
+                            <asp:Button ID="TourExpEntryL2" Style="margin-right: 5px;" runat="server" CssClass="quicklink-cont1"
+                                Text="TourExpense Entry" OnClick="TourExpEntryL2_Click" />
+                            <asp:Button ID="BeatPlanAppL2" Style="margin-right: 5px;" runat="server" CssClass="quicklink-cont1"
+                                Text="BeatPlan Approval" OnClick="BeatPlanAppL2_Click" />
+                            <asp:Button ID="DownloadL2" Style="margin-right: 5px;" runat="server" CssClass="quicklink-cont1"
+                                Text="Downloads" OnClick="DownloadL2_Click" />
+                            <asp:Button ID="LocalExpL2" Style="margin-right: 5px;" runat="server" CssClass="quicklink-cont1"
+                                Text="Local Expense" OnClick="LocalExpL2_Click" />
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="quickLinkTabL3" style="display: none;" runat="server">
+                    <!-- Home tab content -->
+                    <div class="tab-pane active">
+                        <p style="text-align: center;">
+                            <h3>Quick Links</h3>
+                        </p>
+                        <div class="menu-info">
+                            <asp:Button ID="DSRLevel3" Style="margin-right: 5px;" runat="server" CssClass="quicklink-cont1"
+                                Text="DSR Entry" OnClick="DSRLevel3_Click" />
+                            <asp:Button ID="TourExpL3" Style="margin-right: 5px;" runat="server" CssClass="quicklink-cont1"
+                                Text="TourExpense Entry" OnClick="TourExpL3_Click" />
+                            <asp:Button ID="BeatPlanAppL3" Style="margin-right: 5px;" runat="server" CssClass="quicklink-cont1"
+                                Text="BeatPlan Approval" OnClick="BeatPlanAppL3_Click" />
+                            <asp:Button ID="DownlaodsL3" Style="margin-right: 5px;" runat="server" CssClass="quicklink-cont1"
+                                Text="Downloads" OnClick="DownlaodsL3_Click" />
+                            <asp:Button ID="LocalExpenseL3" Style="margin-right: 5px;" runat="server" CssClass="quicklink-cont1"
+                                Text="Local Expense" OnClick="LocalExpenseL3_Click" />
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="QuickLinkTabDist" style="display: none;" runat="server">
+                    <!-- Home tab content -->
+                    <div class="tab-pane active">
+                        <p style="text-align: center;">
+                            <h3>Quick Links</h3>
+                        </p>
+                        <div class="menu-info">
+                            <asp:Button ID="OrderEntry" Style="margin-right: 5px;" runat="server" CssClass="quicklink-cont1"
+                                Text="Purchase Order Entry" OnClick="OrderEntry_Click" />
+                            <asp:Button ID="DownloadsDist" Style="margin-right: 5px;" runat="server" CssClass="quicklink-cont1"
+                                Text="Downloads" OnClick="DownloadsDist_Click" />
+                            <asp:Button ID="DistComplaint" Style="margin-right: 5px;" runat="server" CssClass="quicklink-cont1"
+                                Text="Complaint" OnClick="DistComplaint_Click" />
+                            <asp:Button ID="DistSuggestion" Style="margin-right: 5px;" runat="server" CssClass="quicklink-cont1"
+                                Text="Suggestion" OnClick="DistSuggestion_Click" />
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <asp:LinkButton ID="lnkDummy" runat="server"></asp:LinkButton>
+        <ajaxToolkit:ModalPopupExtender ID="ModalPopupExtender1" BehaviorID="mpe" runat="server"
+            PopupControlID="pnlPopup" TargetControlID="lnkDummy" BackgroundCssClass="modalBackground" CancelControlID="Span1">
+        </ajaxToolkit:ModalPopupExtender>
+        <center>
+<asp:Panel ID="pnlPopup" runat="server" width="50%" Style="border:1px solid #D86215;height:100px;background-color:#D86215;border-radius:4px;display: none">
+            <span class="glyphicon glyphicon-remove pull-right img-circle" id="Span1" runat="server" style="color:white;cursor:pointer"></span>
+    <div style="width:70%;padding-top:25px">
+         <%--<img ID="imghide" runat="server" class="glyphicon glyphicon-remove pull-right" src="img/cross.jpg" style="height:16px;width:16px;padding-top:0px" />--%>
+        
+        <asp:Label ID="lblmszgm" runat="server" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:20px;color:white"></asp:Label>
+        
+       
+    </div>
+</asp:Panel></center>
+    </form>
+</body>
+</html>

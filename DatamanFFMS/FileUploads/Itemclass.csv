@@ -1,0 +1,6 @@
+ItemClass*,SyncCode,Active*
+varchar(50),varchar(50),bit
+Item Class555,,1
+Item Class2,,0
+Item Class3,12,1
+Item Class4,13,1

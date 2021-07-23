@@ -1,0 +1,9 @@
+Parent,ItemName,Itemcode,Unit,Active,StdPack,Syncid,Mrp,Dp,Rp,PriceGroup,ProductClassSyncCode,SegmentSyncCode
+.,testitem,test,pcs,1,10,,0,0,0,A,1,1
+.,Ceiling Fan,IF004,Pcs,1,20,,1200,1050,1100,B,2,2
+.,Table Fan,IF005,Pcs,1,15,,1700,1550,1600,C,3,3
+.,Exaust Fan,IF006,Pcs,1,10,,1400,1220,1300,D,4,4
+Table Fan,ABC,ABC,pcs,1,1,,1,1,1,E,5,5
+ABC,ABCD,ABCD,pcs,1,1,,1,1,1,F,6,6
+ABCD,ABCDE,ABCD,pcs,1,1,,1,1,1,,,
+ABCDE,ABCDEF,ABCDEF,PCS,1,1,1,1,1,1,,,

@@ -1,0 +1,10 @@
+DistInvDocId*,Vdate*,SyncId*,PriceList,ItemCodeSyncCode*,Qty,Rate,Amount,taxPer,Tax_Amt,ExciseAmount,Net_Total,EmployeeSyncId*,LocationSyncID*,ItemRemarks,Porder,Category,Qty (KG)
+Varchar(30),Datetime(dd/mm/yyyy),varchar(50),varchar(25),varchar(50),"numeric(9,2)","numeric(9,2)","numeric(15,2)","numeric(9,2)","numeric(9,2)","numeric(15,2)","numeric(15,2)",varchar(50),varchar(50),varchar(255),varchar(30),varchar(5),"numeric(9,2)"
+1000000011,11-04-2015,1017,,FG000001,195,186.87,36439.65,,,,36439.65,1006,1,,Test,SAP,195
+1000000021,14-04-2015,1017,,FG000001,16,960,15360,,,,15360,1341,1,,Test,SAP,16
+1000000037,14-04-2015,1017,,FG000001,30,936.9,28107,,,,28107,1017,1,,Test,SAP,30
+1000000054,16-04-2015,3028,,FG000001,800,17.61,14088,,,,14088,1006,1,,Test,SAP,
+1000000064,16-04-2015,3028,,229,400,3.74,1496,,,,1496,1017,1,,Test,SAP,
+1000000071,17-04-2015,3028,,229,40,328.21,13128.4,,,,13128.4,1026,1,,Test,SAP,
+1000000093,18-04-2015,3028,,229,20,712.24,14244.8,,,,14244.8,1341,1,,Test,SAP,
+1000000104,18-04-2015,3028,,229,800,11.71,9368,,,,9368,0,1,,Test,SAP,

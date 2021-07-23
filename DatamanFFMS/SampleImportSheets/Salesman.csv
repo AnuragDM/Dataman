@@ -1,0 +1,10 @@
+Parent,Name,DeviceNo,DSRAllowDays,Active,Address1,Address2,City,Email,Mobile,Remarks,RoleName,LoginCreated,SyncId
+.,test,1.26E+15,4,1,Birahana Road,Birahana Road1,Kanpur,test@gmail.com,9999999999,sales man entry,Sr. manager,1,
+.,Anurag,3.57E+15,2,1,Civil Lines,,Kanpur,anurag@gmail.com,9899999999,salesman,Sr. manager,0,
+.,Shyam,2.37E+15,2,0,pared,Pared,Kanpur,shyam@gmail.com,9999999999,salesman add,Sr. manager,1,
+.,rahul,2.36E+15,4,1,Vikas nagar,,Lucknow,rahul@gmail.com,9999999999,salesman add,HR,1,
+.,Amit,2.59E+15,4,1,shyam nagar,shyam nagar,Indore,amit@gmail.com,9999999999,salesman entry,HR,1,
+.,ravi,9.86E+15,2,0,Civil Lines,Civil Lines,Bhopal,ravi@gmail.com,9999999999,salesman add,Admin,0,
+.,Saurav,8.75E+15,3,1,vikas nagar,vikas nagar,Jaipur,saurav@gmail.com,9999999999,salesman entry,Admin,1,
+.,rakesh ,2.36E+15,5,1,rajendra Nagar,,Bikaner,rakesh.k@gmail.com,9999999999,salesman add,Admin,1,
+.,Gaurav,7.90E+15,3,1,Shyam nagar,shyam nagar,Bikaner,gaurav@gmail.com,9999999999,salesman add,Admin,1,

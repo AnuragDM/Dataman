@@ -1,0 +1,3 @@
+DocId*,SalesrepSyncID*,PostingDate*,Narration,Amount,crAmount,DrAmount,CompanyCode
+AD15/01955,9000,08/11/2015,Invoice AD15/01955,21328,0,21328,1000
+AD15/01954,9001,12/12/2015,Invoice AD15/01954,76529,0,76529,1001

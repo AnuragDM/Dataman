@@ -1,0 +1,5 @@
+LoginID*,Password*,Active,Email*,RoleName*,Department*,Designation*,EmpSyncId*,EmployeeName*,CostCentre*
+varchar(100),varchar(20),bit,varchar(50),varchar(50),varchar(50),varchar(50),varchar(30),varchar(50),"decimal(18,2)"
+L3 UP,12345678,1,L3@GMAIL.COM,L3,MARKETING,STATE AREA HEAD,2000,L3 UP,0
+L2 UP,12345678,1,L2@GMAIL.COM,L2,MARKETING,DISTRICT AREA HEAD,2001,L2 UP,0
+L1 UP,12345678,1,L1@GMAIL.COM,L1,MARKETING,AREA INCHARGE,2002,L1 UP,0

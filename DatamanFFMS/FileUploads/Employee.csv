@@ -1,0 +1,29 @@
+LoginID*,Password*,Active,Email*,RoleName*,Department*,Designation*,EmpSyncId*,EmployeeName*,CostCentre*
+varchar(100),varchar(20),bit,varchar(50),varchar(50),varchar(50),varchar(50),varchar(30),varchar(50),"decimal(18,2)"
+7458050702,12345678,1,prashant@midaselectronic.in,L1,MARKETING,AREA INCHARGE,2003,Prashant Kumar Singh,0
+6394753122,12345678,1,a.kumar@midaselectronic.in ,L1,MARKETING,AREA INCHARGE,2004,Abhishek Kumar,0
+6394753121,12345678,1,akashverma@midaselectronic.in,L1,MARKETING,AREA INCHARGE,2005,Akash Verma,0
+6394753112,12345678,1,a.shukla@midaselectronic.in,L1,MARKETING,AREA INCHARGE,2006,Anand Shukla,0
+6394753114,12345678,1,nigam.a@midaselectronic.in,L1,MARKETING,AREA INCHARGE,2007,Amit Nigam,0
+6394753120,12345678,1,J.kumar@midaselectronic.in,L1,MARKETING,AREA INCHARGE,2008,Jaidev Kumar,0
+6394753102,12345678,1,nileshkr@midaselectronic.in,L1,MARKETING,AREA INCHARGE,2009,Nilesh Kumar,0
+6394753103,12345678,1,ashish.k@midaselectronic.in,L1,MARKETING,AREA INCHARGE,2010,Ashish Kumar,0
+6394753101,12345678,1,vijay@midaselectronic.in,L1,MARKETING,AREA INCHARGE,2011,Vijay Kumar,0
+9464577502,12345678,1,rajnish@midaselectronic.com,L1,MARKETING,AREA INCHARGE,2012,Rajnish Singh,0
+6394753139,12345678,1,s.srivastava@midaselectronic.in,L1,MARKETING,AREA INCHARGE,2013,Santosh Srivastava,0
+7080603108,12345678,1,vikassingh@midaselectronic.in,L1,MARKETING,AREA INCHARGE,2014,Vikas Singh,0
+6394753113,12345678,1,d.kannaujiya@midaselectronic.in,L1,MARKETING,AREA INCHARGE,2015,Deepak Kumar Kanoujia,0
+6394753126,12345678,1,d.kushwaha@midaselectronic.in,L1,MARKETING,AREA INCHARGE,2016,Deepak Kushwaha,0
+6394753115,12345678,1,atul@midaselectronic.in,L1,MARKETING,AREA INCHARGE,2017,Atul Kumar Srivastav,0
+6394753124,12345678,1,d.sharma@midaselectronic.in,L1,MARKETING,AREA INCHARGE,2018,Dipak Sharma,0
+7080603107,12345678,1,h.thakur@midaselectronic.in,L1,MARKETING,AREA INCHARGE,2019,Himanshu Singh,0
+6394753116,12345678,1,a.rawat@midaselectronic.in ,L1,MARKETING,AREA INCHARGE,2020,Ajay Kumar Rawat,0
+6394753119,12345678,1,s.nahar@midaselectronic.in,L1,MARKETING,AREA INCHARGE,2021,Sumit Nahar,0
+6394753129,12345678,1,,L1,MARKETING,AREA INCHARGE,2022,Sandeep Kohli,0
+6394753118,12345678,1,h.arora@midaselectronic.in,L1,MARKETING,AREA INCHARGE,2023,Himanshu Arora,0
+6394753150,12345678,1,a.srivastava@mivar.co.in,L1,MARKETING,AREA INCHARGE,2024,Ajay Kumar Srivastava,0
+6394753110,12345678,1,k.kumar@midaselectronic.in,L1,MARKETING,AREA INCHARGE,2025,Kundan Kumar,0
+6394753125,12345678,1,z.ullah@midaselectronic.in,L1,MARKETING,AREA INCHARGE,2026,Zaki Ullah Siddiqui,0
+6394753126,12345678,1,i.tiwari@midaselectronic.in,L1,MARKETING,AREA INCHARGE,2027,Inder Bhushan Tiwari,0
+6394753127,12345678,1,p.singh@midaselectronic.in,L1,MARKETING,AREA INCHARGE,2028,ParamJeet Singh,0
+6394753128,12345678,1,d.kumar@midaselectronic.in,L1,MARKETING,AREA INCHARGE,2029,Dharmender Kumar,0

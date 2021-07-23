@@ -1,0 +1,145 @@
+#region SendEmail
+        [WebMethod]
+        public void SendEmail()
+        {
+            string query = @"SELECT ms.SMName,ms.Email,tv.VDate,tv.NextVisitDate,tv.Remark as Remark,'' as PartyName,
+                ms1.SMName AS NextwithSalesman,MastArea.AreaName AS NextCity,'DSRVisit' as Flag FROM TransVisit tv LEFT JOIN mastsalesrep ms ON tv.SMId=ms.SMId
+                LEFT JOIN mastarea ON mastarea.AreaId=tv.nCityId LEFT JOIN MastSalesRep ms1 ON ms1.SMId=tv.nWithUserId where ms.SMName<>'.' 
+				union all 
+                select ms.SMName,ms.Email,tfv.VDate,tfv.Nextvisit as NextVisitDate,tfv.Remarks as Remark,mp.PartyName,'' as NextwithSalesman,
+                mastarea.AreaName as NextCity,'FailVisit' as Flag from TransFailedVisit tfv LEFT JOIN mastsalesrep ms ON tfv.SMId=ms.SMId
+                left join MastParty mp on mp.PartyId=tfv.PartyId 
+                LEFT JOIN mastarea ON mastarea.AreaId=mp.AreaId ";
+
+            DataTable dtNextApp = DbConnectionDAL.GetDataTable(CommandType.Text, query);
+            DataView dv = new DataView(dtNextApp);
+            dv.RowFilter = "NextVisitDate='" + Settings.GetUTCTime().ToShortDateString() + "'";
+
+            //
+            int ou = -1;
+            DataTable dtNew = new DataTable();
+            for (int i = 0; i < dv.ToTable().Columns.Count; i++)
+            {
+                dtNew.Columns.Add(dv.ToTable().Columns[i].ColumnName.ToString());
+            }
+
+            if (dv.ToTable().Rows.Count > 0)
+            {
+                for (int i = 0; i < dv.ToTable().Rows.Count; i++)
+                {
+                    ou++;
+                    dtNew.Rows.Add();
+                    if (dv.ToTable().Rows[i]["Flag"].ToString() == "DSRVisit")
+                    {
+
+                        dtNew.Rows[ou]["SMName"] = dv.ToTable().Rows[i]["SMName"].ToString();
+                        dtNew.Rows[ou]["NextVisitDate"] = dv.ToTable().Rows[i]["NextVisitDate"].ToString();
+                        dtNew.Rows[ou]["NextCity"] = dv.ToTable().Rows[i]["NextCity"].ToString();
+                        dtNew.Rows[ou]["Flag"] = dv.ToTable().Rows[i]["Flag"].ToString();
+                    }
+                    else
+                    {
+                        dtNew.Rows[ou]["SMName"] = dv.ToTable().Rows[i]["SMName"].ToString();
+                        dtNew.Rows[ou]["NextVisitDate"] = dv.ToTable().Rows[i]["NextVisitDate"].ToString();
+                        dtNew.Rows[ou]["PartyName"] = dv.ToTable().Rows[i]["PartyName"].ToString();
+                        dtNew.Rows[ou]["NextCity"] = dv.ToTable().Rows[i]["NextCity"].ToString();
+                        dtNew.Rows[ou]["Flag"] = dv.ToTable().Rows[i]["Flag"].ToString();
+                    }
+
+                    //SendEmail(dv.ToTable().Rows[i]["NextVisitDate"].ToString(), dv.ToTable().Rows[i]["Email"].ToString(), dv.ToTable().Rows[i]["SMName"].ToString(), dv.ToTable().Rows[i]["NextCity"].ToString(), dv.ToTable().Rows[i]["Flag"].ToString(), dv.ToTable().Rows[i]["PartyName"].ToString());
+                }
+                DataView dvAllNextApp = new DataView(dv.ToTable());
+                DataView dvNewFilter = new DataView(dtNew);
+                DataTable dtDistinct = dvAllNextApp.ToTable(true, "SMName", "Email", "NextVisitDate");
+                if (dtDistinct.Rows.Count > 0)
+                {
+                    for (int m = 0; m < dtDistinct.Rows.Count; m++)
+                    {
+                        dvNewFilter.RowFilter = "SMName='" + dtDistinct.Rows[m]["SMName"].ToString() + "'";
+                        if (dvNewFilter.ToTable().Rows.Count > 0)
+                        {
+                            SendEmail(dtDistinct.Rows[m]["Email"].ToString(), dtDistinct.Rows[m]["SMName"].ToString(), dvNewFilter.ToTable());
+                        }
+                    }
+                }
+            }
+        }
+        #endregion
+
+================================================================================
+
+   private void SendEmail(string email, string UName, DataTable dt)
+        {
+            try
+            {
+                string defaultmailId = "", defaultpassword = "", port = "", QryDsr = "", QryFailV = "";
+                string qry = "select SenderEmailID,SenderPassword,Port from [MastEnviro]";
+
+                DataTable checkemaildt = DbConnectionDAL.GetDataTable(CommandType.Text, qry);
+
+                if (checkemaildt.Rows.Count > 0)
+                {
+                    defaultmailId = checkemaildt.Rows[0]["SenderEmailID"].ToString();
+                    defaultpassword = checkemaildt.Rows[0]["SenderPassword"].ToString();
+                    port = checkemaildt.Rows[0]["Port"].ToString();
+                }
+                StringBuilder strBody = new StringBuilder();
+
+                strBody.AppendLine("<table cellpadding='1' cellspacing='1' style='width:100%; color:padding:1em; #FFF23DC; font: 12px/17px Verdana,Arial,Helvetica,sans-serif;'><tr><td colspan='2' style='width: 150px;'><strong>Welcome to FFMS!</strong></td></tr><tr>");
+                strBody.AppendLine("".PadLeft(20, ' ').Replace(" ", "&nbsp;"));
+                strBody.AppendLine("<tr><td>Dear " + UName + ", </td></tr></table>");
+                strBody.AppendLine("".PadLeft(20, ' ').Replace(" ", "&nbsp;"));
+                strBody.AppendLine("<table style='padding:4px;'>");
+                if (dt.Rows.Count > 0)
+                {
+                    for (int i = 0; i < dt.Rows.Count; i++)
+                    {
+                        if (dt.Rows[i]["Flag"].ToString() == "DSRVisit")
+                        {
+                            if (QryDsr.Length == 0)
+                            {
+                                QryDsr = "<tr><td colspan=2> <p style='background-color: white; font-size: 14px; font-family: 'Segoe UI',Arial,Helvetica,sans-serif'><b>DSR Schedule Details are -</b></p></td></tr>";
+                                strBody.AppendLine(QryDsr);
+                                //strBody.AppendLine("<tr><td colspan=2> <p style='background-color: white; font-size: 14px; font-family: 'Segoe UI',Arial,Helvetica,sans-serif'><b>DSR Schedule Details are -</b></p></td></tr>");
+                            }
+                            strBody.AppendLine("<tr><td colspan=2> <p style='background-color: white; font-size: 14px; font-family: 'Segoe UI',Arial,Helvetica,sans-serif'>Date - " + System.Convert.ToDateTime((dt.Rows[i]["NextVisitDate"])).ToString("dd/MMM/yyyy") + "</p></td></tr>");
+                            strBody.AppendLine("<tr><td colspan=2> <p style='background-color: white; font-size: 14px; font-family: 'Segoe UI',Arial,Helvetica,sans-serif'>City - " + dt.Rows[i]["NextCity"].ToString() + "</p></td></tr>");
+                            strBody.AppendLine("".PadLeft(20, ' ').Replace(" ", "&nbsp;"));
+
+                        }
+                        else
+                        {
+                            strBody.AppendLine("".PadLeft(20, ' ').Replace(" ", "&nbsp;"));
+                            if (QryFailV.Length == 0)
+                            {
+                                QryFailV = "<tr><td colspan=2> <p style='background-color: white; font-size: 14px; font-family: 'Segoe UI',Arial,Helvetica,sans-serif'><b>Failed Visit Details are -</b></p></td></tr>";
+                                strBody.AppendLine(QryFailV);
+                                //strBody.AppendLine("<tr><td colspan=2> <p style='background-color: white; font-size: 14px; font-family: 'Segoe UI',Arial,Helvetica,sans-serif'><b>Failed Visit Details are -</b></p></td></tr>");
+                            }
+                            strBody.AppendLine("<tr><td colspan=2> <p style='background-color: white; font-size: 14px; font-family: 'Segoe UI',Arial,Helvetica,sans-serif'>Date - " + System.Convert.ToDateTime((dt.Rows[i]["NextVisitDate"])).ToString("dd/MMM/yyyy") + "</p></td></tr>");
+                            strBody.AppendLine("<tr><td colspan=2><p style='background-color: white; font-size: 14px; font-family: 'Segoe UI',Arial,Helvetica,sans-serif'>Party - " + dt.Rows[i]["PartyName"].ToString() + "</p></td></tr>");
+                            strBody.AppendLine("<tr><td colspan=2><p style='background-color: white; font-size: 14px; font-family: 'Segoe UI',Arial,Helvetica,sans-serif'>Area - " + dt.Rows[i]["NextCity"].ToString() + "</p></td></tr>");
+                        }
+                    }
+                }
+                strBody.AppendLine("<tr><td colspan=2><p style='background-color: white; font-size: 14px; font-family: 'Segoe UI',Arial,Helvetica,sans-serif'>Regards,<br>Admin</p></td></tr>");
+                strBody.AppendLine("</table>");
+
+                MailMessage mail = new MailMessage(defaultmailId, email, "FFMS-Todays Scheduled Visit", strBody.ToString());
+              
+                //pasing the Gmail credentials to send the email
+
+                NetworkCredential mailAuthenticaion = new NetworkCredential(defaultmailId, defaultpassword);
+
+                SmtpClient mailclient = new SmtpClient("mail.dataman.in", Convert.ToInt32(port));
+                mailclient.EnableSsl = false;
+                mailclient.UseDefaultCredentials = false;
+                mailclient.Credentials = mailAuthenticaion;
+                mail.IsBodyHtml = true;
+                mailclient.Send(mail);
+            }
+            catch (Exception ex)
+            {
+                ex.ToString();
+            }
+        }

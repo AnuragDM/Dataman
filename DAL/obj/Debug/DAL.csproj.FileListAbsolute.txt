@@ -1,0 +1,243 @@
+C:\Documents and Settings\vd\Desktop\vdt\UNISEY\Development\vdt\DAL\bin\Debug\DAL.dll
+C:\Documents and Settings\vd\Desktop\vdt\UNISEY\Development\vdt\DAL\bin\Debug\DAL.pdb
+C:\Documents and Settings\vd\Desktop\vdt\UNISEY\Development\vdt\DAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\vd\Desktop\vdt\UNISEY\Development\vdt\DAL\obj\Debug\DAL.dll
+C:\Documents and Settings\vd\Desktop\vdt\UNISEY\Development\vdt\DAL\obj\Debug\DAL.pdb
+C:\Users\dataman\Downloads\vdt\vdt\UNISEY\Development\vdt\DAL\bin\Debug\DAL.dll
+C:\Users\dataman\Downloads\vdt\vdt\UNISEY\Development\vdt\DAL\bin\Debug\DAL.pdb
+C:\Users\dataman\Downloads\vdt\vdt\UNISEY\Development\vdt\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\dataman\Downloads\vdt\vdt\UNISEY\Development\vdt\DAL\obj\Debug\DAL.dll
+C:\Users\dataman\Downloads\vdt\vdt\UNISEY\Development\vdt\DAL\obj\Debug\DAL.pdb
+D:\New Astal\DAL\bin\Debug\DAL.dll
+D:\New Astal\DAL\bin\Debug\DAL.pdb
+D:\New Astal\DAL\obj\Debug\DAL.dll
+D:\New Astal\DAL\obj\Debug\DAL.pdb
+D:\New Astal\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\dataman\Desktop\gaurav new\AstralFFMS\AstralFFMS\DAL\bin\Debug\DAL.dll
+C:\Users\dataman\Desktop\gaurav new\AstralFFMS\AstralFFMS\DAL\bin\Debug\DAL.pdb
+C:\Users\dataman\Desktop\gaurav new\AstralFFMS\AstralFFMS\DAL\obj\Debug\DAL.dll
+C:\Users\dataman\Desktop\gaurav new\AstralFFMS\AstralFFMS\DAL\obj\Debug\DAL.pdb
+C:\Users\dataman\Desktop\gaurav new\AstralFFMS\AstralFFMS\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\dataman\Desktop\Astral_12Oct_2015\Astral_12Oct_2015\AstralFFMS\DAL\bin\Debug\DAL.dll
+C:\Users\dataman\Desktop\Astral_12Oct_2015\Astral_12Oct_2015\AstralFFMS\DAL\bin\Debug\DAL.pdb
+C:\Users\dataman\Desktop\Astral_12Oct_2015\Astral_12Oct_2015\AstralFFMS\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\dataman\Desktop\Astral_12Oct_2015\Astral_12Oct_2015\AstralFFMS\DAL\obj\Debug\DAL.dll
+C:\Users\dataman\Desktop\Astral_12Oct_2015\Astral_12Oct_2015\AstralFFMS\DAL\obj\Debug\DAL.pdb
+C:\Users\dataman\Desktop\Astral_16Oct_2015\Astral_16Oct_2015\AstralFFMS\DAL\bin\Debug\DAL.dll
+C:\Users\dataman\Desktop\Astral_16Oct_2015\Astral_16Oct_2015\AstralFFMS\DAL\bin\Debug\DAL.pdb
+C:\Users\dataman\Desktop\Astral_16Oct_2015\Astral_16Oct_2015\AstralFFMS\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\dataman\Desktop\Astral_16Oct_2015\Astral_16Oct_2015\AstralFFMS\DAL\obj\Debug\DAL.dll
+C:\Users\dataman\Desktop\Astral_16Oct_2015\Astral_16Oct_2015\AstralFFMS\DAL\obj\Debug\DAL.pdb
+E:\Astral\Astral_24Oct_2015\AstralFFMS\DAL\bin\Debug\DAL.dll
+E:\Astral\Astral_24Oct_2015\AstralFFMS\DAL\bin\Debug\DAL.pdb
+E:\Astral\Astral_24Oct_2015\AstralFFMS\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\Astral\Astral_24Oct_2015\AstralFFMS\DAL\obj\Debug\DAL.dll
+E:\Astral\Astral_24Oct_2015\AstralFFMS\DAL\obj\Debug\DAL.pdb
+E:\Astral\Astral_26Oct_2015\AstralFFMS\DAL\bin\Debug\DAL.dll
+E:\Astral\Astral_26Oct_2015\AstralFFMS\DAL\bin\Debug\DAL.pdb
+E:\Astral\Astral_26Oct_2015\AstralFFMS\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\Astral\Astral_26Oct_2015\AstralFFMS\DAL\obj\Debug\DAL.dll
+E:\Astral\Astral_26Oct_2015\AstralFFMS\DAL\obj\Debug\DAL.pdb
+E:\Astral\Astral_31Oct_2015\AstralFFMS\DAL\bin\Debug\DAL.dll
+E:\Astral\Astral_31Oct_2015\AstralFFMS\DAL\bin\Debug\DAL.pdb
+E:\Astral\Astral_31Oct_2015\AstralFFMS\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\Astral\Astral_31Oct_2015\AstralFFMS\DAL\obj\Debug\DAL.dll
+E:\Astral\Astral_31Oct_2015\AstralFFMS\DAL\obj\Debug\DAL.pdb
+E:\Astral\Astral_04_Nov_2015\AstralFFMS\DAL\bin\Debug\DAL.dll
+E:\Astral\Astral_04_Nov_2015\AstralFFMS\DAL\bin\Debug\DAL.pdb
+E:\Astral\Astral_04_Nov_2015\AstralFFMS\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\Astral\Astral_04_Nov_2015\AstralFFMS\DAL\obj\Debug\DAL.dll
+E:\Astral\Astral_04_Nov_2015\AstralFFMS\DAL\obj\Debug\DAL.pdb
+E:\Astral\Astral_07_Nov_2015\AstralFFMS\DAL\bin\Debug\DAL.dll
+E:\Astral\Astral_07_Nov_2015\AstralFFMS\DAL\bin\Debug\DAL.pdb
+E:\Astral\Astral_07_Nov_2015\AstralFFMS\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\Astral\Astral_07_Nov_2015\AstralFFMS\DAL\obj\Debug\DAL.dll
+E:\Astral\Astral_07_Nov_2015\AstralFFMS\DAL\obj\Debug\DAL.pdb
+D:\ProjSanjeev\ASTRAL\DAL\bin\Debug\DAL.dll
+D:\ProjSanjeev\ASTRAL\DAL\bin\Debug\DAL.pdb
+D:\ProjSanjeev\ASTRAL\DAL\obj\Debug\DAL.dll
+D:\ProjSanjeev\ASTRAL\DAL\obj\Debug\DAL.pdb
+D:\ProjSanjeev\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\Astral\Astral_17_Nov_2015\ASTRAL\DAL\bin\Debug\DAL.dll
+E:\Astral\Astral_17_Nov_2015\ASTRAL\DAL\bin\Debug\DAL.pdb
+E:\Astral\Astral_17_Nov_2015\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\Astral\Astral_17_Nov_2015\ASTRAL\DAL\obj\Debug\DAL.dll
+E:\Astral\Astral_17_Nov_2015\ASTRAL\DAL\obj\Debug\DAL.pdb
+E:\Astral\Astral_20_Nov_2015\ASTRAL\DAL\bin\Debug\DAL.dll
+E:\Astral\Astral_20_Nov_2015\ASTRAL\DAL\bin\Debug\DAL.pdb
+E:\Astral\Astral_20_Nov_2015\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\Astral\Astral_20_Nov_2015\ASTRAL\DAL\obj\Debug\DAL.dll
+E:\Astral\Astral_20_Nov_2015\ASTRAL\DAL\obj\Debug\DAL.pdb
+E:\Astral\Astral_21_Nov_2015\ASTRAL\DAL\bin\Debug\DAL.dll
+E:\Astral\Astral_21_Nov_2015\ASTRAL\DAL\bin\Debug\DAL.pdb
+E:\Astral\Astral_21_Nov_2015\ASTRAL\DAL\obj\Debug\DAL.dll
+E:\Astral\Astral_21_Nov_2015\ASTRAL\DAL\obj\Debug\DAL.pdb
+D:\Nishu\Astral_02_Jan_2016\ASTRAL\DAL\bin\Debug\DAL.dll
+D:\Nishu\Astral_02_Jan_2016\ASTRAL\DAL\bin\Debug\DAL.pdb
+D:\Nishu\Astral_02_Jan_2016\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Nishu\Astral_02_Jan_2016\ASTRAL\DAL\obj\Debug\DAL.dll
+D:\Nishu\Astral_02_Jan_2016\ASTRAL\DAL\obj\Debug\DAL.pdb
+E:\AstralProject\Astral_04_Feb_2016\ASTRAL\DAL\bin\Debug\DAL.dll
+E:\AstralProject\Astral_04_Feb_2016\ASTRAL\DAL\bin\Debug\DAL.pdb
+E:\AstralProject\Astral_04_Feb_2016\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\AstralProject\Astral_04_Feb_2016\ASTRAL\DAL\obj\Debug\DAL.dll
+E:\AstralProject\Astral_04_Feb_2016\ASTRAL\DAL\obj\Debug\DAL.pdb
+E:\AstralProject\Astral_16_Feb_2016\ASTRAL\DAL\bin\Debug\DAL.dll
+E:\AstralProject\Astral_16_Feb_2016\ASTRAL\DAL\bin\Debug\DAL.pdb
+E:\AstralProject\Astral_16_Feb_2016\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\AstralProject\Astral_16_Feb_2016\ASTRAL\DAL\obj\Debug\DAL.dll
+E:\AstralProject\Astral_16_Feb_2016\ASTRAL\DAL\obj\Debug\DAL.pdb
+E:\AstralProject\Astral_16_Apr_2016\ASTRAL\DAL\bin\Debug\DAL.dll
+E:\AstralProject\Astral_16_Apr_2016\ASTRAL\DAL\bin\Debug\DAL.pdb
+E:\AstralProject\Astral_16_Apr_2016\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\AstralProject\Astral_16_Apr_2016\ASTRAL\DAL\obj\Debug\DAL.dll
+E:\AstralProject\Astral_16_Apr_2016\ASTRAL\DAL\obj\Debug\DAL.pdb
+E:\Astral_18_Apr_2016\ASTRAL\DAL\bin\Debug\DAL.dll
+E:\Astral_18_Apr_2016\ASTRAL\DAL\bin\Debug\DAL.pdb
+E:\Astral_18_Apr_2016\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\Astral_18_Apr_2016\ASTRAL\DAL\obj\Debug\DAL.dll
+E:\Astral_18_Apr_2016\ASTRAL\DAL\obj\Debug\DAL.pdb
+E:\Astral_19_Apr_2016\ASTRAL\DAL\bin\Debug\DAL.dll
+E:\Astral_19_Apr_2016\ASTRAL\DAL\bin\Debug\DAL.pdb
+E:\Astral_19_Apr_2016\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\Astral_19_Apr_2016\ASTRAL\DAL\obj\Debug\DAL.dll
+E:\Astral_19_Apr_2016\ASTRAL\DAL\obj\Debug\DAL.pdb
+D:\Astral_13_May_2016\ASTRAL\DAL\bin\Debug\DAL.dll
+D:\Astral_13_May_2016\ASTRAL\DAL\bin\Debug\DAL.pdb
+D:\Astral_13_May_2016\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Astral_13_May_2016\ASTRAL\DAL\obj\Debug\DAL.dll
+D:\Astral_13_May_2016\ASTRAL\DAL\obj\Debug\DAL.pdb
+D:\Astral_20_May_2016\ASTRAL\DAL\bin\Debug\DAL.dll
+D:\Astral_20_May_2016\ASTRAL\DAL\bin\Debug\DAL.pdb
+D:\Astral_20_May_2016\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Astral_20_May_2016\ASTRAL\DAL\obj\Debug\DAL.dll
+D:\Astral_20_May_2016\ASTRAL\DAL\obj\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_31_May_2016_Ankita\ASTRAL\DAL\bin\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_31_May_2016_Ankita\ASTRAL\DAL\bin\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_31_May_2016_Ankita\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\AstralOptimizationProject\Astral_Optimization_31_May_2016_Ankita\ASTRAL\DAL\obj\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_31_May_2016_Ankita\ASTRAL\DAL\obj\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_03_June_2016\ASTRAL\DAL\bin\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_03_June_2016\ASTRAL\DAL\bin\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_03_June_2016\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\AstralOptimizationProject\Astral_Optimization_03_June_2016\ASTRAL\DAL\obj\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_03_June_2016\ASTRAL\DAL\obj\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_04_June_2016\ASTRAL\DAL\bin\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_04_June_2016\ASTRAL\DAL\bin\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_04_June_2016\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\AstralOptimizationProject\Astral_Optimization_04_June_2016\ASTRAL\DAL\obj\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_04_June_2016\ASTRAL\DAL\obj\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_17_June_2016\ASTRAL\DAL\bin\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_17_June_2016\ASTRAL\DAL\bin\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_17_June_2016\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\AstralOptimizationProject\Astral_Optimization_17_June_2016\ASTRAL\DAL\obj\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_17_June_2016\ASTRAL\DAL\obj\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_20_June_2016\ASTRAL\DAL\bin\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_20_June_2016\ASTRAL\DAL\bin\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_20_June_2016\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\AstralOptimizationProject\Astral_Optimization_20_June_2016\ASTRAL\DAL\obj\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_20_June_2016\ASTRAL\DAL\obj\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_21_June_2016\ASTRAL\DAL\bin\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_21_June_2016\ASTRAL\DAL\bin\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_21_June_2016\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\AstralOptimizationProject\Astral_Optimization_21_June_2016\ASTRAL\DAL\obj\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_21_June_2016\ASTRAL\DAL\obj\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_28_June_2016\ASTRAL\DAL\bin\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_28_June_2016\ASTRAL\DAL\bin\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_28_June_2016\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\AstralOptimizationProject\Astral_Optimization_28_June_2016\ASTRAL\DAL\obj\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_28_June_2016\ASTRAL\DAL\obj\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_04_July_2016\ASTRAL\DAL\bin\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_04_July_2016\ASTRAL\DAL\bin\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_04_July_2016\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\AstralOptimizationProject\Astral_Optimization_04_July_2016\ASTRAL\DAL\obj\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_04_July_2016\ASTRAL\DAL\obj\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_07_July_2016\ASTRAL\DAL\bin\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_07_July_2016\ASTRAL\DAL\bin\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_07_July_2016\ASTRAL\DAL\obj\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_07_July_2016\ASTRAL\DAL\obj\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_08_July_2016\ASTRAL\DAL\bin\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_08_July_2016\ASTRAL\DAL\bin\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_08_July_2016\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\AstralOptimizationProject\Astral_Optimization_08_July_2016\ASTRAL\DAL\obj\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_08_July_2016\ASTRAL\DAL\obj\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_22_July_2016\ASTRAL\DAL\bin\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_22_July_2016\ASTRAL\DAL\bin\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_22_July_2016\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\AstralOptimizationProject\Astral_Optimization_22_July_2016\ASTRAL\DAL\obj\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_22_July_2016\ASTRAL\DAL\obj\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_05_Aug_2016\ASTRAL\DAL\bin\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_05_Aug_2016\ASTRAL\DAL\bin\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_05_Aug_2016\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\AstralOptimizationProject\Astral_Optimization_05_Aug_2016\ASTRAL\DAL\obj\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_05_Aug_2016\ASTRAL\DAL\obj\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_10_Aug_2016\ASTRAL\DAL\bin\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_10_Aug_2016\ASTRAL\DAL\bin\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_10_Aug_2016\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\AstralOptimizationProject\Astral_Optimization_10_Aug_2016\ASTRAL\DAL\obj\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_10_Aug_2016\ASTRAL\DAL\obj\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_01_Oct_2016\ASTRAL\DAL\bin\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_01_Oct_2016\ASTRAL\DAL\bin\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_01_Oct_2016\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\AstralOptimizationProject\Astral_Optimization_01_Oct_2016\ASTRAL\DAL\obj\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_01_Oct_2016\ASTRAL\DAL\obj\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_07_Nov_2016\ASTRAL\DAL\bin\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_07_Nov_2016\ASTRAL\DAL\bin\Debug\DAL.pdb
+F:\AstralOptimizationProject\Astral_Optimization_07_Nov_2016\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\AstralOptimizationProject\Astral_Optimization_07_Nov_2016\ASTRAL\DAL\obj\Debug\DAL.dll
+F:\AstralOptimizationProject\Astral_Optimization_07_Nov_2016\ASTRAL\DAL\obj\Debug\DAL.pdb
+F:\MohaniCRMProject\Mohani_11_Dec_2016\ASTRAL\DAL\bin\Debug\DAL.dll
+F:\MohaniCRMProject\Mohani_11_Dec_2016\ASTRAL\DAL\bin\Debug\DAL.pdb
+F:\MohaniCRMProject\Mohani_11_Dec_2016\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\MohaniCRMProject\Mohani_11_Dec_2016\ASTRAL\DAL\obj\Debug\DAL.dll
+F:\MohaniCRMProject\Mohani_11_Dec_2016\ASTRAL\DAL\obj\Debug\DAL.pdb
+F:\MohaniCRMProject\Mohani_20_Dec_2016\ASTRAL\DAL\bin\Debug\DAL.dll
+F:\MohaniCRMProject\Mohani_20_Dec_2016\ASTRAL\DAL\bin\Debug\DAL.pdb
+F:\MohaniCRMProject\Mohani_20_Dec_2016\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\MohaniCRMProject\Mohani_20_Dec_2016\ASTRAL\DAL\obj\Debug\DAL.dll
+F:\MohaniCRMProject\Mohani_20_Dec_2016\ASTRAL\DAL\obj\Debug\DAL.pdb
+F:\MohaniCRMProject\2017\Mohani_18_Jan_2017\ASTRAL\DAL\bin\Debug\DAL.dll
+F:\MohaniCRMProject\2017\Mohani_18_Jan_2017\ASTRAL\DAL\bin\Debug\DAL.pdb
+F:\MohaniCRMProject\2017\Mohani_18_Jan_2017\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\MohaniCRMProject\2017\Mohani_18_Jan_2017\ASTRAL\DAL\obj\Debug\DAL.dll
+F:\MohaniCRMProject\2017\Mohani_18_Jan_2017\ASTRAL\DAL\obj\Debug\DAL.pdb
+E:\Abhishek Jaiswal\web service\Mohani_30_Jan_2017\Mohani_30_Jan_2017\ASTRAL\DAL\bin\Debug\DAL.dll
+E:\Abhishek Jaiswal\web service\Mohani_30_Jan_2017\Mohani_30_Jan_2017\ASTRAL\DAL\bin\Debug\DAL.pdb
+E:\Abhishek Jaiswal\web service\Mohani_30_Jan_2017\Mohani_30_Jan_2017\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\Abhishek Jaiswal\web service\Mohani_30_Jan_2017\Mohani_30_Jan_2017\ASTRAL\DAL\obj\Debug\DAL.dll
+E:\Abhishek Jaiswal\web service\Mohani_30_Jan_2017\Mohani_30_Jan_2017\ASTRAL\DAL\obj\Debug\DAL.pdb
+D:\Nishu\Mohani_06_Feb_2017\ASTRAL\DAL\bin\Debug\DAL.dll
+D:\Nishu\Mohani_06_Feb_2017\ASTRAL\DAL\bin\Debug\DAL.pdb
+D:\Nishu\Mohani_06_Feb_2017\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Nishu\Mohani_06_Feb_2017\ASTRAL\DAL\obj\Debug\DAL.dll
+D:\Nishu\Mohani_06_Feb_2017\ASTRAL\DAL\obj\Debug\DAL.pdb
+F:\MohaniCRMProject\2017\Mohani_09_Feb_2017\ASTRAL\DAL\bin\Debug\DAL.dll
+F:\MohaniCRMProject\2017\Mohani_09_Feb_2017\ASTRAL\DAL\bin\Debug\DAL.pdb
+F:\MohaniCRMProject\2017\Mohani_09_Feb_2017\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+F:\MohaniCRMProject\2017\Mohani_09_Feb_2017\ASTRAL\DAL\obj\Debug\DAL.dll
+F:\MohaniCRMProject\2017\Mohani_09_Feb_2017\ASTRAL\DAL\obj\Debug\DAL.pdb
+D:\Mohani_01_Mar_2016_TrackerProjectMerge\ASTRAL\DAL\bin\Debug\DAL.dll
+D:\Mohani_01_Mar_2016_TrackerProjectMerge\ASTRAL\DAL\bin\Debug\DAL.pdb
+D:\Mohani_01_Mar_2016_TrackerProjectMerge\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Mohani_01_Mar_2016_TrackerProjectMerge\ASTRAL\DAL\obj\Debug\DAL.dll
+D:\Mohani_01_Mar_2016_TrackerProjectMerge\ASTRAL\DAL\obj\Debug\DAL.pdb
+E:\Abhishek Jaiswal\20feb\Mohani_22_Mar_SoucreSeperateFromAstral\Mohani_22_Mar_SoucreSeperateFromAstral\ASTRAL\DAL\bin\Debug\DAL.dll
+E:\Abhishek Jaiswal\20feb\Mohani_22_Mar_SoucreSeperateFromAstral\Mohani_22_Mar_SoucreSeperateFromAstral\ASTRAL\DAL\bin\Debug\DAL.pdb
+E:\Abhishek Jaiswal\20feb\Mohani_22_Mar_SoucreSeperateFromAstral\Mohani_22_Mar_SoucreSeperateFromAstral\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\Abhishek Jaiswal\20feb\Mohani_22_Mar_SoucreSeperateFromAstral\Mohani_22_Mar_SoucreSeperateFromAstral\ASTRAL\DAL\obj\Debug\DAL.dll
+E:\Abhishek Jaiswal\20feb\Mohani_22_Mar_SoucreSeperateFromAstral\Mohani_22_Mar_SoucreSeperateFromAstral\ASTRAL\DAL\obj\Debug\DAL.pdb
+D:\Mohani_27_Mar_SoucreSeperateFromAstral\ASTRAL\DAL\bin\Debug\DAL.dll
+D:\Mohani_27_Mar_SoucreSeperateFromAstral\ASTRAL\DAL\bin\Debug\DAL.pdb
+D:\Mohani_27_Mar_SoucreSeperateFromAstral\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\Mohani_27_Mar_SoucreSeperateFromAstral\ASTRAL\DAL\obj\Debug\DAL.dll
+D:\Mohani_27_Mar_SoucreSeperateFromAstral\ASTRAL\DAL\obj\Debug\DAL.pdb
+E:\Abhishek Jaiswal\20feb\project_40816\NISHU\sfmstest\Mohani_07_Apr_2017_SourceSeperateFromAstral\Mohani_07_Apr_2017_SourceSeperateFromAstral\ASTRAL\DAL\bin\Debug\DAL.dll
+E:\Abhishek Jaiswal\20feb\project_40816\NISHU\sfmstest\Mohani_07_Apr_2017_SourceSeperateFromAstral\Mohani_07_Apr_2017_SourceSeperateFromAstral\ASTRAL\DAL\bin\Debug\DAL.pdb
+E:\Abhishek Jaiswal\20feb\project_40816\NISHU\sfmstest\Mohani_07_Apr_2017_SourceSeperateFromAstral\Mohani_07_Apr_2017_SourceSeperateFromAstral\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\Abhishek Jaiswal\20feb\project_40816\NISHU\sfmstest\Mohani_07_Apr_2017_SourceSeperateFromAstral\Mohani_07_Apr_2017_SourceSeperateFromAstral\ASTRAL\DAL\obj\Debug\DAL.dll
+E:\Abhishek Jaiswal\20feb\project_40816\NISHU\sfmstest\Mohani_07_Apr_2017_SourceSeperateFromAstral\Mohani_07_Apr_2017_SourceSeperateFromAstral\ASTRAL\DAL\obj\Debug\DAL.pdb
+E:\Abhishek Jaiswal\20feb\project_40816\NISHU\sfmstest\sfmtest\sfms\ASTRAL\DAL\bin\Debug\DAL.dll
+E:\Abhishek Jaiswal\20feb\project_40816\NISHU\sfmstest\sfmtest\sfms\ASTRAL\DAL\bin\Debug\DAL.pdb
+E:\Abhishek Jaiswal\20feb\project_40816\NISHU\sfmstest\sfmtest\sfms\ASTRAL\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\Abhishek Jaiswal\20feb\project_40816\NISHU\sfmstest\sfmtest\sfms\ASTRAL\DAL\obj\Debug\DAL.dll
+E:\Abhishek Jaiswal\20feb\project_40816\NISHU\sfmstest\sfmtest\sfms\ASTRAL\DAL\obj\Debug\DAL.pdb

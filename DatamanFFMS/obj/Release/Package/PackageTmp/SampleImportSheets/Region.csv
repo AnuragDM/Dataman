@@ -1,0 +1,5 @@
+Country,Region,LocationType,SyncId,Active
+INDIA,East,REGION,,1
+INDIA,West,REGION,,1
+INDIA,North,REGION,,1
+INDIA,South,REGION,,1

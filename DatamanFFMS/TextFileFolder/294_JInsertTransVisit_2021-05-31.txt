@@ -1,0 +1,54 @@
+ @@@@@@ Start DateTime @@@@@16/07/2021 11:10:48 @@@@@@  
+605,2021-05-31,2021-07-22,Ff,294,null,17:43,287,2 WHEELER,Own,0,287,294  00000050,4063,1205,1361,1379,1364,1191,1371,AGROHA,AMBALA,BAHADURGARH,FATEHABAD,GURGAON,JODHPUR,KALANAUR, 0.0,0.0,,0, 0, 0.0, , 0, 1365, -122.084, 37.4219983, 1622446164840, 1622446297657, 80.37737, 26.38844333333333, 1626350919000, 1626351199518, test v1 to v2 first end visit
+ @@@@@@  Select to table   @@@@@SELECT VISID,VISITDOCID,CITYIDS,CITYNAME,APPSTATUS,ISNULL(DSR_TYPE,'') DSR_TYPE FROM TRANSVISIT  WHERE VDATE='2021-05-31' and SMId=294 
+ @@@@@@  Exception Generated  @@@@@System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'DBO.TRANSVISITLOG'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DAL.SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\V2\Version2_14-07-2021\Merged_GrahaakField_14_July_2021\Dataman\DAL\SQLHelper.cs:line 346
+   at DAL.SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\V2\Version2_14-07-2021\Merged_GrahaakField_14_July_2021\Dataman\DAL\SQLHelper.cs:line 263
+   at DAL.SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText) in e:\V2\Version2_14-07-2021\Merged_GrahaakField_14_July_2021\Dataman\DAL\SQLHelper.cs:line 237
+   at DAL.DbConnectionDAL.ExecuteNonQuery(CommandType cmdType, String cmdText) in e:\V2\Version2_14-07-2021\Merged_GrahaakField_14_July_2021\Dataman\DAL\DbConnectionDAL.cs:line 139
+   at AstralFFMS.GrahaakWebserviceV1.JSInsertTransVisit_V2() in e:\V2\Version2_14-07-2021\Merged_GrahaakField_14_July_2021\Dataman\DatamanFFMS\GrahaakWebserviceV1.asmx.cs:line 16345
+ClientConnectionId:5aab3d71-82ad-4f0a-8862-6522f07eff1c
+Error Number:208,State:1,Class:16
+
+ @@@@@@ Start DateTime @@@@@16/07/2021 11:19:57 @@@@@@  
+605,2021-05-31,2021-07-22,Ff,294,null,17:43,287,2 WHEELER,Own,0,287,294  00000050,4063,1205,1361,1379,1364,1191,1371,AGROHA,AMBALA,BAHADURGARH,FATEHABAD,GURGAON,JODHPUR,KALANAUR, 0.0,0.0,,0, 0, 0.0, , 0, 1365, -122.084, 37.4219983, 1622446164840, 1622446297657, 80.37737, 26.38844333333333, 1626350919000, 1626351199518, test v1 to v2 first end visit
+ @@@@@@  Select to table   @@@@@SELECT VISID,VISITDOCID,CITYIDS,CITYNAME,APPSTATUS,ISNULL(DSR_TYPE,'') DSR_TYPE FROM TRANSVISIT  WHERE VDATE='2021-05-31' and SMId=294 
+ @@@@@@  Exception Generated  @@@@@System.Data.SqlClient.SqlException (0x80131904): The select list for the INSERT statement contains more items than the insert list. The number of SELECT values must match the number of INSERT columns.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DAL.SqlHelper.ExecuteNonQuery(SqlConnection connection, CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\V2\Version2_14-07-2021\Merged_GrahaakField_14_July_2021\Dataman\DAL\SQLHelper.cs:line 346
+   at DAL.SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) in e:\V2\Version2_14-07-2021\Merged_GrahaakField_14_July_2021\Dataman\DAL\SQLHelper.cs:line 263
+   at DAL.SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText) in e:\V2\Version2_14-07-2021\Merged_GrahaakField_14_July_2021\Dataman\DAL\SQLHelper.cs:line 237
+   at DAL.DbConnectionDAL.ExecuteNonQuery(CommandType cmdType, String cmdText) in e:\V2\Version2_14-07-2021\Merged_GrahaakField_14_July_2021\Dataman\DAL\DbConnectionDAL.cs:line 139
+   at AstralFFMS.GrahaakWebserviceV1.JSInsertTransVisit_V2()
+ClientConnectionId:5aab3d71-82ad-4f0a-8862-6522f07eff1c
+Error Number:121,State:1,Class:15
+
+ @@@@@@ Start DateTime @@@@@16/07/2021 11:27:01 @@@@@@  
+605,2021-05-31,2021-07-22,Ff,294,null,17:43,287,2 WHEELER,Own,0,287,294  00000050,4063,1205,1361,1379,1364,1191,1371,AGROHA,AMBALA,BAHADURGARH,FATEHABAD,GURGAON,JODHPUR,KALANAUR, 0.0,0.0,,0, 0, 0.0, , 0, 1365, -122.084, 37.4219983, 1622446164840, 1622446297657, 80.37737, 26.38844333333333, 1626350919000, 1626351199518, test v1 to v2 first end visit
+ @@@@@@  Select to table   @@@@@SELECT VISID,VISITDOCID,CITYIDS,CITYNAME,APPSTATUS,ISNULL(DSR_TYPE,'') DSR_TYPE FROM TRANSVISIT  WHERE VDATE='2021-05-31' and SMId=294 
+ @@@@@@  Update to table   @@@@@UPDATE TRANSVISIT SET VISITDOCID='VISSN 2021 00001317',USERID=605,VDATE='2021-05-31',NEXTVISITDATE='2021-07-22', REMARK='Ff',SMID=294 ,WITHUSERID=287,MODEOFTRANSPORT='2 WHEELER', VEHICLEUSED='Own',LOCK=0, NWITHUSERID=287, ANDROID_ID='294  00000050', CITYIDS='4063,1205,1361,1379,1364,1191,1371', CITYNAME='AGROHA,AMBALA,BAHADURGARH,FATEHABAD,GURGAON,JODHPUR,KALANAUR', ORDERAMOUNTMAIL= 0.0, ORDERAMOUNTPHONE=0.0 ,VISITCODE='',ATTENDANCE=0, FROMAREACODE=0,OTHEREXPENSE=0.0,ANDROIDAPPREMARK='',TOAREACODE=0,NCITYID=1365, CREATED_DATE=DATEADD(MINUTE,330,GETUTCDATE()),LATITUDE='37.4219983',LONGITUDE='-122.084',ADDRESS='' ,LAT_LONG_DATETIME='2021-05-31  12:59:24.840',ENDREMARK='test v1 to v2 first end visit',MOBILE_END_DATE='2021-07-15  17:43:19.518',ENDLATITUDE='26.38844333333333',ENDLONGITUDE='80.37737',ENDADDRESS='' ,ENDLAT_LONG_DATETIME='2021-07-15  17:38:39.000',DSR_TYPE='P',TRAN_TYPE='E'   WHERE VDATE='2021-05-31' AND SMID=294 
+ @@@@@@   Providing Response To Android  @@@@@4512, VISSN 2021 00001317, 1626415035107
+ @@@@@@   Providing Response To Android  @@@@@[{"ID":4512,"DOCUMENTID":"VISSN 2021 00001317","MS":1626415035107}]
+ @@@@@@ End DateTime @@@@@16/07/2021 11:27:19 @@@@@@  
+
+ @@@@@@ Start DateTime @@@@@16/07/2021 11:37:40 @@@@@@  
+605,2021-05-31,2021-07-22,Ff,294,null,17:43,287,2 WHEELER,Own,0,287,294  00000050,4063,1205,1361,1379,1364,1191,1371,AGROHA,AMBALA,BAHADURGARH,FATEHABAD,GURGAON,JODHPUR,KALANAUR, 0.0,0.0,,0, 0, 0.0, , 0, 1365, -122.084, 37.4219983, 1622446164840, 1622446297657, 80.37737, 26.38844333333333, 1626350919000, 1626351199518, test v1 to v2 first end visit
+ @@@@@@  Select to table   @@@@@SELECT VISID,VISITDOCID,CITYIDS,CITYNAME,APPSTATUS,ISNULL(DSR_TYPE,'') DSR_TYPE FROM TRANSVISIT  WHERE VDATE='2021-05-31' and SMId=294 
+ @@@@@@  Insert to table   @@@@@INSERT INTO DBO.TRANSVISIT (VISITDOCID, USERID, VDATE, NEXTVISITDATE, REMARK, SMID, WITHUSERID, MODEOFTRANSPORT, VEHICLEUSED, LOCK, NWITHUSERID, ANDROID_ID, CITYIDS, CITYNAME, ORDERAMOUNTMAIL, ORDERAMOUNTPHONE,VISITCODE,ATTENDANCE,FROMAREACODE,OTHEREXPENSE,ANDROIDAPPREMARK,TOAREACODE,NCITYID,CREATED_DATE,LATITUDE,LONGITUDE,ADDRESS,LAT_LONG_DATETIME,MOBILE_CREATED_DATE,ENDREMARK,MOBILE_END_DATE,ENDLATITUDE,ENDLONGITUDE,ENDADDRESS,ENDLAT_LONG_DATETIME,DSR_TYPE,TRAN_TYPE)  VALUES ('VISSN 2021 00001325', 605, '2021-05-31', '2021-07-22', 'Ff', 294 , 287, '2 WHEELER', 'Own', 0, 287, '294  00000050', '4063,1205,1361,1379,1364,1191,1371', 'AGROHA,AMBALA,BAHADURGARH,FATEHABAD,GURGAON,JODHPUR,KALANAUR', 0.0, 0.0,'',0,0,0.0,'',0,1365,DateAdd(minute,330,getutcdate()),'37.4219983','-122.084','','2021-05-31  12:59:24.840','2021-05-31  13:01:37.657','test v1 to v2 first end visit','2021-07-15  17:43:19.518','26.38844333333333','80.37737','','2021-07-15  17:38:39.000','P','E')
+ @@@@@@   Providing Response To Android  @@@@@4520, VISSN 2021 00001325, 1626415663493
+ @@@@@@   Providing Response To Android  @@@@@[{"ID":4520,"DOCUMENTID":"VISSN 2021 00001325","MS":1626415663493}]
+ @@@@@@ End DateTime @@@@@16/07/2021 11:37:40 @@@@@@  
+

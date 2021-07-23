@@ -1,0 +1,2589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="InsertPersonLicense">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="compcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PersonName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="URL" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertPersonLicenseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertPersonLicenseResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertPersonLicenseforFFMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="compcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PersonName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="URL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mob" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertPersonLicenseforFFMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertPersonLicenseforFFMSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Insert_GrahaakLicense">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="compcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PersonName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="URL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mob" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="product" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Insert_GrahaakLicenseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Insert_GrahaakLicenseResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_GrahaakLicense">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="compcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PersonName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="URL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mob" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="active" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="olddevice" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mobileaccess" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="product" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="hdnoldMobile" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Update_GrahaakLicenseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Update_GrahaakLicenseResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePersonLicenseForFFms">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NewDeviceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OldDeviceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PersonName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="active" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mob" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePersonLicenseForFFmsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdatePersonLicenseForFFmsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeletePersonLicenseForFFMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeletePersonLicenseForFFMSResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdatePersonLicense">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NewDeviceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OldDeviceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PersonName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdatePersonLicenseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdatePersonLicenseResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeletePersonLicense">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeletePersonLicenseResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DMTApp_updateRegId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Reg_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DMTApp_updateRegIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DMTApp_updateRegIdResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GFFT_updateRegId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Reg_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GFFT_updateRegIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GFFT_updateRegIdResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveLicense_Tracker">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="compcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PersonName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="URL" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveLicense_TrackerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveLicense_TrackerResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateLicense_Tracker">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PersonName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Oldmobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Newmobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Active" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateLicense_TrackerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateLicense_TrackerResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DMTApp_GetRegistrationId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DMTApp_GetRegistrationIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DMTApp_GetRegistrationIdResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DMTApp_GetLicenseInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DMTApp_GetLicenseInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DMTApp_GetLicenseInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EnablePersonLicense">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EnablePersonLicenseResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="JGetLicenseDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="JGetLicenseDetailResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetLicenseDetail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLicenseDetailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLicenseDetailResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateTrackerImeiByMobile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IMEI" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateTrackerImeiByMobileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateTrackerImeiByMobileResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="requestOTP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Mobile" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="requestOTPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestOTPResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="verifyOTP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="OTP" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="verifyOTPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="verifyOTPResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetValidOrg">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Organisation" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetValidOrgResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetValidOrgResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetVastralayaUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Organisation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Product" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mobile" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetVastralayaUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetVastralayaUserResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLicenseDetailForFFMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLicenseDetailForFFMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLicenseDetailForFFMSResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchAddress">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Lat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Long" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchAddressResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchAddressResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getaddrfortest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Lat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Long" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getaddrfortestResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="InsertAddress">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Lat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Long" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertAddressResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertAddressResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getActivePersonDaily">
+        <s:complexType />
+      </s:element>
+      <s:element name="getActivePersonDailyResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="getInactivePersonDaily">
+        <s:complexType />
+      </s:element>
+      <s:element name="getInactivePersonDailyResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateAddressFromOldAddress">
+        <s:complexType />
+      </s:element>
+      <s:element name="UpdateAddressFromOldAddressResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPersondetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="deviceno" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPersondetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPersondetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DMTApp_JInsertVersion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DMTApp_JInsertVersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DMTApp_JInsertVersionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="DataTable" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InsertPersonLicenseSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertPersonLicense" />
+  </wsdl:message>
+  <wsdl:message name="InsertPersonLicenseSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertPersonLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertPersonLicenseforFFMSSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertPersonLicenseforFFMS" />
+  </wsdl:message>
+  <wsdl:message name="InsertPersonLicenseforFFMSSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertPersonLicenseforFFMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="Insert_GrahaakLicenseSoapIn">
+    <wsdl:part name="parameters" element="tns:Insert_GrahaakLicense" />
+  </wsdl:message>
+  <wsdl:message name="Insert_GrahaakLicenseSoapOut">
+    <wsdl:part name="parameters" element="tns:Insert_GrahaakLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="Update_GrahaakLicenseSoapIn">
+    <wsdl:part name="parameters" element="tns:Update_GrahaakLicense" />
+  </wsdl:message>
+  <wsdl:message name="Update_GrahaakLicenseSoapOut">
+    <wsdl:part name="parameters" element="tns:Update_GrahaakLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePersonLicenseForFFmsSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdatePersonLicenseForFFms" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePersonLicenseForFFmsSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdatePersonLicenseForFFmsResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeletePersonLicenseForFFMSSoapIn">
+    <wsdl:part name="parameters" element="tns:DeletePersonLicenseForFFMS" />
+  </wsdl:message>
+  <wsdl:message name="DeletePersonLicenseForFFMSSoapOut">
+    <wsdl:part name="parameters" element="tns:DeletePersonLicenseForFFMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePersonLicenseSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdatePersonLicense" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePersonLicenseSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdatePersonLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeletePersonLicenseSoapIn">
+    <wsdl:part name="parameters" element="tns:DeletePersonLicense" />
+  </wsdl:message>
+  <wsdl:message name="DeletePersonLicenseSoapOut">
+    <wsdl:part name="parameters" element="tns:DeletePersonLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="DMTApp_updateRegIdSoapIn">
+    <wsdl:part name="parameters" element="tns:DMTApp_updateRegId" />
+  </wsdl:message>
+  <wsdl:message name="DMTApp_updateRegIdSoapOut">
+    <wsdl:part name="parameters" element="tns:DMTApp_updateRegIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GFFT_updateRegIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GFFT_updateRegId" />
+  </wsdl:message>
+  <wsdl:message name="GFFT_updateRegIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GFFT_updateRegIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveLicense_TrackerSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveLicense_Tracker" />
+  </wsdl:message>
+  <wsdl:message name="SaveLicense_TrackerSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveLicense_TrackerResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLicense_TrackerSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateLicense_Tracker" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLicense_TrackerSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateLicense_TrackerResponse" />
+  </wsdl:message>
+  <wsdl:message name="DMTApp_GetRegistrationIdSoapIn">
+    <wsdl:part name="parameters" element="tns:DMTApp_GetRegistrationId" />
+  </wsdl:message>
+  <wsdl:message name="DMTApp_GetRegistrationIdSoapOut">
+    <wsdl:part name="parameters" element="tns:DMTApp_GetRegistrationIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="DMTApp_GetLicenseInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:DMTApp_GetLicenseInfo" />
+  </wsdl:message>
+  <wsdl:message name="DMTApp_GetLicenseInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:DMTApp_GetLicenseInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="EnablePersonLicenseSoapIn">
+    <wsdl:part name="parameters" element="tns:EnablePersonLicense" />
+  </wsdl:message>
+  <wsdl:message name="EnablePersonLicenseSoapOut">
+    <wsdl:part name="parameters" element="tns:EnablePersonLicenseResponse" />
+  </wsdl:message>
+  <wsdl:message name="JGetLicenseDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:JGetLicenseDetail" />
+  </wsdl:message>
+  <wsdl:message name="JGetLicenseDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:JGetLicenseDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLicenseDetailSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLicenseDetail" />
+  </wsdl:message>
+  <wsdl:message name="GetLicenseDetailSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLicenseDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTrackerImeiByMobileSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateTrackerImeiByMobile" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTrackerImeiByMobileSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateTrackerImeiByMobileResponse" />
+  </wsdl:message>
+  <wsdl:message name="requestOTPSoapIn">
+    <wsdl:part name="parameters" element="tns:requestOTP" />
+  </wsdl:message>
+  <wsdl:message name="requestOTPSoapOut">
+    <wsdl:part name="parameters" element="tns:requestOTPResponse" />
+  </wsdl:message>
+  <wsdl:message name="verifyOTPSoapIn">
+    <wsdl:part name="parameters" element="tns:verifyOTP" />
+  </wsdl:message>
+  <wsdl:message name="verifyOTPSoapOut">
+    <wsdl:part name="parameters" element="tns:verifyOTPResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetValidOrgSoapIn">
+    <wsdl:part name="parameters" element="tns:GetValidOrg" />
+  </wsdl:message>
+  <wsdl:message name="GetValidOrgSoapOut">
+    <wsdl:part name="parameters" element="tns:GetValidOrgResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetVastralayaUserSoapIn">
+    <wsdl:part name="parameters" element="tns:SetVastralayaUser" />
+  </wsdl:message>
+  <wsdl:message name="SetVastralayaUserSoapOut">
+    <wsdl:part name="parameters" element="tns:SetVastralayaUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLicenseDetailForFFMSSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLicenseDetailForFFMS" />
+  </wsdl:message>
+  <wsdl:message name="GetLicenseDetailForFFMSSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLicenseDetailForFFMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="FetchAddressSoapIn">
+    <wsdl:part name="parameters" element="tns:FetchAddress" />
+  </wsdl:message>
+  <wsdl:message name="FetchAddressSoapOut">
+    <wsdl:part name="parameters" element="tns:FetchAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="getaddrfortestSoapIn">
+    <wsdl:part name="parameters" element="tns:getaddrfortest" />
+  </wsdl:message>
+  <wsdl:message name="getaddrfortestSoapOut">
+    <wsdl:part name="parameters" element="tns:getaddrfortestResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertAddressSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertAddress" />
+  </wsdl:message>
+  <wsdl:message name="InsertAddressSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="getActivePersonDailySoapIn">
+    <wsdl:part name="parameters" element="tns:getActivePersonDaily" />
+  </wsdl:message>
+  <wsdl:message name="getActivePersonDailySoapOut">
+    <wsdl:part name="parameters" element="tns:getActivePersonDailyResponse" />
+  </wsdl:message>
+  <wsdl:message name="getInactivePersonDailySoapIn">
+    <wsdl:part name="parameters" element="tns:getInactivePersonDaily" />
+  </wsdl:message>
+  <wsdl:message name="getInactivePersonDailySoapOut">
+    <wsdl:part name="parameters" element="tns:getInactivePersonDailyResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAddressFromOldAddressSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateAddressFromOldAddress" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAddressFromOldAddressSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateAddressFromOldAddressResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPersondetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPersondetails" />
+  </wsdl:message>
+  <wsdl:message name="GetPersondetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPersondetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="DMTApp_JInsertVersionSoapIn">
+    <wsdl:part name="parameters" element="tns:DMTApp_JInsertVersion" />
+  </wsdl:message>
+  <wsdl:message name="DMTApp_JInsertVersionSoapOut">
+    <wsdl:part name="parameters" element="tns:DMTApp_JInsertVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertPersonLicenseHttpGetIn">
+    <wsdl:part name="compcode" type="s:string" />
+    <wsdl:part name="DeviceID" type="s:string" />
+    <wsdl:part name="PersonName" type="s:string" />
+    <wsdl:part name="URL" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertPersonLicenseHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertPersonLicenseforFFMSHttpGetIn">
+    <wsdl:part name="compcode" type="s:string" />
+    <wsdl:part name="DeviceID" type="s:string" />
+    <wsdl:part name="PersonName" type="s:string" />
+    <wsdl:part name="URL" type="s:string" />
+    <wsdl:part name="mob" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertPersonLicenseforFFMSHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Insert_GrahaakLicenseHttpGetIn">
+    <wsdl:part name="compcode" type="s:string" />
+    <wsdl:part name="DeviceID" type="s:string" />
+    <wsdl:part name="PersonName" type="s:string" />
+    <wsdl:part name="URL" type="s:string" />
+    <wsdl:part name="mob" type="s:string" />
+    <wsdl:part name="product" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Insert_GrahaakLicenseHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Update_GrahaakLicenseHttpGetIn">
+    <wsdl:part name="compcode" type="s:string" />
+    <wsdl:part name="DeviceID" type="s:string" />
+    <wsdl:part name="PersonName" type="s:string" />
+    <wsdl:part name="URL" type="s:string" />
+    <wsdl:part name="mob" type="s:string" />
+    <wsdl:part name="active" type="s:string" />
+    <wsdl:part name="olddevice" type="s:string" />
+    <wsdl:part name="mobileaccess" type="s:string" />
+    <wsdl:part name="product" type="s:string" />
+    <wsdl:part name="hdnoldMobile" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Update_GrahaakLicenseHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePersonLicenseForFFmsHttpGetIn">
+    <wsdl:part name="NewDeviceID" type="s:string" />
+    <wsdl:part name="OldDeviceID" type="s:string" />
+    <wsdl:part name="PersonName" type="s:string" />
+    <wsdl:part name="active" type="s:string" />
+    <wsdl:part name="mob" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePersonLicenseForFFmsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="DeletePersonLicenseForFFMSHttpGetIn">
+    <wsdl:part name="DeviceID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DeletePersonLicenseForFFMSHttpGetOut" />
+  <wsdl:message name="UpdatePersonLicenseHttpGetIn">
+    <wsdl:part name="NewDeviceID" type="s:string" />
+    <wsdl:part name="OldDeviceID" type="s:string" />
+    <wsdl:part name="PersonName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePersonLicenseHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="DeletePersonLicenseHttpGetIn">
+    <wsdl:part name="DeviceID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DeletePersonLicenseHttpGetOut" />
+  <wsdl:message name="DMTApp_updateRegIdHttpGetIn">
+    <wsdl:part name="Reg_ID" type="s:string" />
+    <wsdl:part name="DeviceNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DMTApp_updateRegIdHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GFFT_updateRegIdHttpGetIn">
+    <wsdl:part name="Reg_ID" type="s:string" />
+    <wsdl:part name="DeviceNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GFFT_updateRegIdHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SaveLicense_TrackerHttpGetIn">
+    <wsdl:part name="compcode" type="s:string" />
+    <wsdl:part name="DeviceID" type="s:string" />
+    <wsdl:part name="PersonName" type="s:string" />
+    <wsdl:part name="URL" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SaveLicense_TrackerHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLicense_TrackerHttpGetIn">
+    <wsdl:part name="PersonName" type="s:string" />
+    <wsdl:part name="Oldmobile" type="s:string" />
+    <wsdl:part name="Newmobile" type="s:string" />
+    <wsdl:part name="Active" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLicense_TrackerHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="DMTApp_GetRegistrationIdHttpGetIn">
+    <wsdl:part name="DeviceNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DMTApp_GetRegistrationIdHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="DMTApp_GetLicenseInfoHttpGetIn">
+    <wsdl:part name="DeviceNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DMTApp_GetLicenseInfoHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="EnablePersonLicenseHttpGetIn">
+    <wsdl:part name="DeviceID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EnablePersonLicenseHttpGetOut" />
+  <wsdl:message name="JGetLicenseDetailHttpGetIn">
+    <wsdl:part name="DeviceNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="JGetLicenseDetailHttpGetOut" />
+  <wsdl:message name="GetLicenseDetailHttpGetIn">
+    <wsdl:part name="DeviceNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLicenseDetailHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTrackerImeiByMobileHttpGetIn">
+    <wsdl:part name="Mobile" type="s:string" />
+    <wsdl:part name="IMEI" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTrackerImeiByMobileHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="requestOTPHttpGetIn">
+    <wsdl:part name="Mobile" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="requestOTPHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="verifyOTPHttpGetIn">
+    <wsdl:part name="Mobile" type="s:string" />
+    <wsdl:part name="OTP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="verifyOTPHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetValidOrgHttpGetIn">
+    <wsdl:part name="Organisation" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetValidOrgHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="SetVastralayaUserHttpGetIn">
+    <wsdl:part name="Organisation" type="s:string" />
+    <wsdl:part name="Product" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Mobile" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetVastralayaUserHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetLicenseDetailForFFMSHttpGetIn">
+    <wsdl:part name="DeviceNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLicenseDetailForFFMSHttpGetOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="FetchAddressHttpGetIn">
+    <wsdl:part name="Lat" type="s:string" />
+    <wsdl:part name="Long" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="FetchAddressHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getaddrfortestHttpGetIn">
+    <wsdl:part name="Lat" type="s:string" />
+    <wsdl:part name="Long" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getaddrfortestHttpGetOut" />
+  <wsdl:message name="InsertAddressHttpGetIn">
+    <wsdl:part name="Lat" type="s:string" />
+    <wsdl:part name="Long" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertAddressHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getActivePersonDailyHttpGetIn" />
+  <wsdl:message name="getActivePersonDailyHttpGetOut" />
+  <wsdl:message name="getInactivePersonDailyHttpGetIn" />
+  <wsdl:message name="getInactivePersonDailyHttpGetOut" />
+  <wsdl:message name="UpdateAddressFromOldAddressHttpGetIn" />
+  <wsdl:message name="UpdateAddressFromOldAddressHttpGetOut" />
+  <wsdl:message name="GetPersondetailsHttpGetIn">
+    <wsdl:part name="deviceno" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPersondetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="DMTApp_JInsertVersionHttpGetIn">
+    <wsdl:part name="Token" type="s:string" />
+    <wsdl:part name="DeviceNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DMTApp_JInsertVersionHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertPersonLicenseHttpPostIn">
+    <wsdl:part name="compcode" type="s:string" />
+    <wsdl:part name="DeviceID" type="s:string" />
+    <wsdl:part name="PersonName" type="s:string" />
+    <wsdl:part name="URL" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertPersonLicenseHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertPersonLicenseforFFMSHttpPostIn">
+    <wsdl:part name="compcode" type="s:string" />
+    <wsdl:part name="DeviceID" type="s:string" />
+    <wsdl:part name="PersonName" type="s:string" />
+    <wsdl:part name="URL" type="s:string" />
+    <wsdl:part name="mob" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertPersonLicenseforFFMSHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Insert_GrahaakLicenseHttpPostIn">
+    <wsdl:part name="compcode" type="s:string" />
+    <wsdl:part name="DeviceID" type="s:string" />
+    <wsdl:part name="PersonName" type="s:string" />
+    <wsdl:part name="URL" type="s:string" />
+    <wsdl:part name="mob" type="s:string" />
+    <wsdl:part name="product" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Insert_GrahaakLicenseHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Update_GrahaakLicenseHttpPostIn">
+    <wsdl:part name="compcode" type="s:string" />
+    <wsdl:part name="DeviceID" type="s:string" />
+    <wsdl:part name="PersonName" type="s:string" />
+    <wsdl:part name="URL" type="s:string" />
+    <wsdl:part name="mob" type="s:string" />
+    <wsdl:part name="active" type="s:string" />
+    <wsdl:part name="olddevice" type="s:string" />
+    <wsdl:part name="mobileaccess" type="s:string" />
+    <wsdl:part name="product" type="s:string" />
+    <wsdl:part name="hdnoldMobile" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Update_GrahaakLicenseHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePersonLicenseForFFmsHttpPostIn">
+    <wsdl:part name="NewDeviceID" type="s:string" />
+    <wsdl:part name="OldDeviceID" type="s:string" />
+    <wsdl:part name="PersonName" type="s:string" />
+    <wsdl:part name="active" type="s:string" />
+    <wsdl:part name="mob" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePersonLicenseForFFmsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="DeletePersonLicenseForFFMSHttpPostIn">
+    <wsdl:part name="DeviceID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DeletePersonLicenseForFFMSHttpPostOut" />
+  <wsdl:message name="UpdatePersonLicenseHttpPostIn">
+    <wsdl:part name="NewDeviceID" type="s:string" />
+    <wsdl:part name="OldDeviceID" type="s:string" />
+    <wsdl:part name="PersonName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdatePersonLicenseHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="DeletePersonLicenseHttpPostIn">
+    <wsdl:part name="DeviceID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DeletePersonLicenseHttpPostOut" />
+  <wsdl:message name="DMTApp_updateRegIdHttpPostIn">
+    <wsdl:part name="Reg_ID" type="s:string" />
+    <wsdl:part name="DeviceNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DMTApp_updateRegIdHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GFFT_updateRegIdHttpPostIn">
+    <wsdl:part name="Reg_ID" type="s:string" />
+    <wsdl:part name="DeviceNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GFFT_updateRegIdHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SaveLicense_TrackerHttpPostIn">
+    <wsdl:part name="compcode" type="s:string" />
+    <wsdl:part name="DeviceID" type="s:string" />
+    <wsdl:part name="PersonName" type="s:string" />
+    <wsdl:part name="URL" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SaveLicense_TrackerHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLicense_TrackerHttpPostIn">
+    <wsdl:part name="PersonName" type="s:string" />
+    <wsdl:part name="Oldmobile" type="s:string" />
+    <wsdl:part name="Newmobile" type="s:string" />
+    <wsdl:part name="Active" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLicense_TrackerHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="DMTApp_GetRegistrationIdHttpPostIn">
+    <wsdl:part name="DeviceNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DMTApp_GetRegistrationIdHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="DMTApp_GetLicenseInfoHttpPostIn">
+    <wsdl:part name="DeviceNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DMTApp_GetLicenseInfoHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="EnablePersonLicenseHttpPostIn">
+    <wsdl:part name="DeviceID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EnablePersonLicenseHttpPostOut" />
+  <wsdl:message name="JGetLicenseDetailHttpPostIn">
+    <wsdl:part name="DeviceNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="JGetLicenseDetailHttpPostOut" />
+  <wsdl:message name="GetLicenseDetailHttpPostIn">
+    <wsdl:part name="DeviceNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLicenseDetailHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTrackerImeiByMobileHttpPostIn">
+    <wsdl:part name="Mobile" type="s:string" />
+    <wsdl:part name="IMEI" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTrackerImeiByMobileHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="requestOTPHttpPostIn">
+    <wsdl:part name="Mobile" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="requestOTPHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="verifyOTPHttpPostIn">
+    <wsdl:part name="Mobile" type="s:string" />
+    <wsdl:part name="OTP" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="verifyOTPHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetValidOrgHttpPostIn">
+    <wsdl:part name="Organisation" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetValidOrgHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="SetVastralayaUserHttpPostIn">
+    <wsdl:part name="Organisation" type="s:string" />
+    <wsdl:part name="Product" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Mobile" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetVastralayaUserHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="GetLicenseDetailForFFMSHttpPostIn">
+    <wsdl:part name="DeviceNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLicenseDetailForFFMSHttpPostOut">
+    <wsdl:part name="Body" />
+  </wsdl:message>
+  <wsdl:message name="FetchAddressHttpPostIn">
+    <wsdl:part name="Lat" type="s:string" />
+    <wsdl:part name="Long" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="FetchAddressHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getaddrfortestHttpPostIn">
+    <wsdl:part name="Lat" type="s:string" />
+    <wsdl:part name="Long" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getaddrfortestHttpPostOut" />
+  <wsdl:message name="InsertAddressHttpPostIn">
+    <wsdl:part name="Lat" type="s:string" />
+    <wsdl:part name="Long" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertAddressHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getActivePersonDailyHttpPostIn" />
+  <wsdl:message name="getActivePersonDailyHttpPostOut" />
+  <wsdl:message name="getInactivePersonDailyHttpPostIn" />
+  <wsdl:message name="getInactivePersonDailyHttpPostOut" />
+  <wsdl:message name="UpdateAddressFromOldAddressHttpPostIn" />
+  <wsdl:message name="UpdateAddressFromOldAddressHttpPostOut" />
+  <wsdl:message name="GetPersondetailsHttpPostIn">
+    <wsdl:part name="deviceno" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPersondetailsHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="DMTApp_JInsertVersionHttpPostIn">
+    <wsdl:part name="Token" type="s:string" />
+    <wsdl:part name="DeviceNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DMTApp_JInsertVersionHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceSoap">
+    <wsdl:operation name="InsertPersonLicense">
+      <wsdl:input message="tns:InsertPersonLicenseSoapIn" />
+      <wsdl:output message="tns:InsertPersonLicenseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPersonLicenseforFFMS">
+      <wsdl:input message="tns:InsertPersonLicenseforFFMSSoapIn" />
+      <wsdl:output message="tns:InsertPersonLicenseforFFMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_GrahaakLicense">
+      <wsdl:input message="tns:Insert_GrahaakLicenseSoapIn" />
+      <wsdl:output message="tns:Insert_GrahaakLicenseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_GrahaakLicense">
+      <wsdl:input message="tns:Update_GrahaakLicenseSoapIn" />
+      <wsdl:output message="tns:Update_GrahaakLicenseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePersonLicenseForFFms">
+      <wsdl:input message="tns:UpdatePersonLicenseForFFmsSoapIn" />
+      <wsdl:output message="tns:UpdatePersonLicenseForFFmsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersonLicenseForFFMS">
+      <wsdl:input message="tns:DeletePersonLicenseForFFMSSoapIn" />
+      <wsdl:output message="tns:DeletePersonLicenseForFFMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePersonLicense">
+      <wsdl:input message="tns:UpdatePersonLicenseSoapIn" />
+      <wsdl:output message="tns:UpdatePersonLicenseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersonLicense">
+      <wsdl:input message="tns:DeletePersonLicenseSoapIn" />
+      <wsdl:output message="tns:DeletePersonLicenseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_updateRegId">
+      <wsdl:input message="tns:DMTApp_updateRegIdSoapIn" />
+      <wsdl:output message="tns:DMTApp_updateRegIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GFFT_updateRegId">
+      <wsdl:input message="tns:GFFT_updateRegIdSoapIn" />
+      <wsdl:output message="tns:GFFT_updateRegIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveLicense_Tracker">
+      <wsdl:input message="tns:SaveLicense_TrackerSoapIn" />
+      <wsdl:output message="tns:SaveLicense_TrackerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLicense_Tracker">
+      <wsdl:input message="tns:UpdateLicense_TrackerSoapIn" />
+      <wsdl:output message="tns:UpdateLicense_TrackerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_GetRegistrationId">
+      <wsdl:input message="tns:DMTApp_GetRegistrationIdSoapIn" />
+      <wsdl:output message="tns:DMTApp_GetRegistrationIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_GetLicenseInfo">
+      <wsdl:input message="tns:DMTApp_GetLicenseInfoSoapIn" />
+      <wsdl:output message="tns:DMTApp_GetLicenseInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EnablePersonLicense">
+      <wsdl:input message="tns:EnablePersonLicenseSoapIn" />
+      <wsdl:output message="tns:EnablePersonLicenseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JGetLicenseDetail">
+      <wsdl:input message="tns:JGetLicenseDetailSoapIn" />
+      <wsdl:output message="tns:JGetLicenseDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseDetail">
+      <wsdl:input message="tns:GetLicenseDetailSoapIn" />
+      <wsdl:output message="tns:GetLicenseDetailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTrackerImeiByMobile">
+      <wsdl:input message="tns:UpdateTrackerImeiByMobileSoapIn" />
+      <wsdl:output message="tns:UpdateTrackerImeiByMobileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestOTP">
+      <wsdl:input message="tns:requestOTPSoapIn" />
+      <wsdl:output message="tns:requestOTPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="verifyOTP">
+      <wsdl:input message="tns:verifyOTPSoapIn" />
+      <wsdl:output message="tns:verifyOTPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetValidOrg">
+      <wsdl:input message="tns:GetValidOrgSoapIn" />
+      <wsdl:output message="tns:GetValidOrgSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetVastralayaUser">
+      <wsdl:input message="tns:SetVastralayaUserSoapIn" />
+      <wsdl:output message="tns:SetVastralayaUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseDetailForFFMS">
+      <wsdl:input message="tns:GetLicenseDetailForFFMSSoapIn" />
+      <wsdl:output message="tns:GetLicenseDetailForFFMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchAddress">
+      <wsdl:input message="tns:FetchAddressSoapIn" />
+      <wsdl:output message="tns:FetchAddressSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getaddrfortest">
+      <wsdl:input message="tns:getaddrfortestSoapIn" />
+      <wsdl:output message="tns:getaddrfortestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAddress">
+      <wsdl:input message="tns:InsertAddressSoapIn" />
+      <wsdl:output message="tns:InsertAddressSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getActivePersonDaily">
+      <wsdl:input message="tns:getActivePersonDailySoapIn" />
+      <wsdl:output message="tns:getActivePersonDailySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getInactivePersonDaily">
+      <wsdl:input message="tns:getInactivePersonDailySoapIn" />
+      <wsdl:output message="tns:getInactivePersonDailySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAddressFromOldAddress">
+      <wsdl:input message="tns:UpdateAddressFromOldAddressSoapIn" />
+      <wsdl:output message="tns:UpdateAddressFromOldAddressSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersondetails">
+      <wsdl:input message="tns:GetPersondetailsSoapIn" />
+      <wsdl:output message="tns:GetPersondetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_JInsertVersion">
+      <wsdl:input message="tns:DMTApp_JInsertVersionSoapIn" />
+      <wsdl:output message="tns:DMTApp_JInsertVersionSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebServiceHttpGet">
+    <wsdl:operation name="InsertPersonLicense">
+      <wsdl:input message="tns:InsertPersonLicenseHttpGetIn" />
+      <wsdl:output message="tns:InsertPersonLicenseHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPersonLicenseforFFMS">
+      <wsdl:input message="tns:InsertPersonLicenseforFFMSHttpGetIn" />
+      <wsdl:output message="tns:InsertPersonLicenseforFFMSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_GrahaakLicense">
+      <wsdl:input message="tns:Insert_GrahaakLicenseHttpGetIn" />
+      <wsdl:output message="tns:Insert_GrahaakLicenseHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_GrahaakLicense">
+      <wsdl:input message="tns:Update_GrahaakLicenseHttpGetIn" />
+      <wsdl:output message="tns:Update_GrahaakLicenseHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePersonLicenseForFFms">
+      <wsdl:input message="tns:UpdatePersonLicenseForFFmsHttpGetIn" />
+      <wsdl:output message="tns:UpdatePersonLicenseForFFmsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersonLicenseForFFMS">
+      <wsdl:input message="tns:DeletePersonLicenseForFFMSHttpGetIn" />
+      <wsdl:output message="tns:DeletePersonLicenseForFFMSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePersonLicense">
+      <wsdl:input message="tns:UpdatePersonLicenseHttpGetIn" />
+      <wsdl:output message="tns:UpdatePersonLicenseHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersonLicense">
+      <wsdl:input message="tns:DeletePersonLicenseHttpGetIn" />
+      <wsdl:output message="tns:DeletePersonLicenseHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_updateRegId">
+      <wsdl:input message="tns:DMTApp_updateRegIdHttpGetIn" />
+      <wsdl:output message="tns:DMTApp_updateRegIdHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GFFT_updateRegId">
+      <wsdl:input message="tns:GFFT_updateRegIdHttpGetIn" />
+      <wsdl:output message="tns:GFFT_updateRegIdHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveLicense_Tracker">
+      <wsdl:input message="tns:SaveLicense_TrackerHttpGetIn" />
+      <wsdl:output message="tns:SaveLicense_TrackerHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLicense_Tracker">
+      <wsdl:input message="tns:UpdateLicense_TrackerHttpGetIn" />
+      <wsdl:output message="tns:UpdateLicense_TrackerHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_GetRegistrationId">
+      <wsdl:input message="tns:DMTApp_GetRegistrationIdHttpGetIn" />
+      <wsdl:output message="tns:DMTApp_GetRegistrationIdHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_GetLicenseInfo">
+      <wsdl:input message="tns:DMTApp_GetLicenseInfoHttpGetIn" />
+      <wsdl:output message="tns:DMTApp_GetLicenseInfoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EnablePersonLicense">
+      <wsdl:input message="tns:EnablePersonLicenseHttpGetIn" />
+      <wsdl:output message="tns:EnablePersonLicenseHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JGetLicenseDetail">
+      <wsdl:input message="tns:JGetLicenseDetailHttpGetIn" />
+      <wsdl:output message="tns:JGetLicenseDetailHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseDetail">
+      <wsdl:input message="tns:GetLicenseDetailHttpGetIn" />
+      <wsdl:output message="tns:GetLicenseDetailHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTrackerImeiByMobile">
+      <wsdl:input message="tns:UpdateTrackerImeiByMobileHttpGetIn" />
+      <wsdl:output message="tns:UpdateTrackerImeiByMobileHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestOTP">
+      <wsdl:input message="tns:requestOTPHttpGetIn" />
+      <wsdl:output message="tns:requestOTPHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="verifyOTP">
+      <wsdl:input message="tns:verifyOTPHttpGetIn" />
+      <wsdl:output message="tns:verifyOTPHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetValidOrg">
+      <wsdl:input message="tns:GetValidOrgHttpGetIn" />
+      <wsdl:output message="tns:GetValidOrgHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetVastralayaUser">
+      <wsdl:input message="tns:SetVastralayaUserHttpGetIn" />
+      <wsdl:output message="tns:SetVastralayaUserHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseDetailForFFMS">
+      <wsdl:input message="tns:GetLicenseDetailForFFMSHttpGetIn" />
+      <wsdl:output message="tns:GetLicenseDetailForFFMSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchAddress">
+      <wsdl:input message="tns:FetchAddressHttpGetIn" />
+      <wsdl:output message="tns:FetchAddressHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getaddrfortest">
+      <wsdl:input message="tns:getaddrfortestHttpGetIn" />
+      <wsdl:output message="tns:getaddrfortestHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAddress">
+      <wsdl:input message="tns:InsertAddressHttpGetIn" />
+      <wsdl:output message="tns:InsertAddressHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getActivePersonDaily">
+      <wsdl:input message="tns:getActivePersonDailyHttpGetIn" />
+      <wsdl:output message="tns:getActivePersonDailyHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getInactivePersonDaily">
+      <wsdl:input message="tns:getInactivePersonDailyHttpGetIn" />
+      <wsdl:output message="tns:getInactivePersonDailyHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAddressFromOldAddress">
+      <wsdl:input message="tns:UpdateAddressFromOldAddressHttpGetIn" />
+      <wsdl:output message="tns:UpdateAddressFromOldAddressHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersondetails">
+      <wsdl:input message="tns:GetPersondetailsHttpGetIn" />
+      <wsdl:output message="tns:GetPersondetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_JInsertVersion">
+      <wsdl:input message="tns:DMTApp_JInsertVersionHttpGetIn" />
+      <wsdl:output message="tns:DMTApp_JInsertVersionHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebServiceHttpPost">
+    <wsdl:operation name="InsertPersonLicense">
+      <wsdl:input message="tns:InsertPersonLicenseHttpPostIn" />
+      <wsdl:output message="tns:InsertPersonLicenseHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPersonLicenseforFFMS">
+      <wsdl:input message="tns:InsertPersonLicenseforFFMSHttpPostIn" />
+      <wsdl:output message="tns:InsertPersonLicenseforFFMSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_GrahaakLicense">
+      <wsdl:input message="tns:Insert_GrahaakLicenseHttpPostIn" />
+      <wsdl:output message="tns:Insert_GrahaakLicenseHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_GrahaakLicense">
+      <wsdl:input message="tns:Update_GrahaakLicenseHttpPostIn" />
+      <wsdl:output message="tns:Update_GrahaakLicenseHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePersonLicenseForFFms">
+      <wsdl:input message="tns:UpdatePersonLicenseForFFmsHttpPostIn" />
+      <wsdl:output message="tns:UpdatePersonLicenseForFFmsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersonLicenseForFFMS">
+      <wsdl:input message="tns:DeletePersonLicenseForFFMSHttpPostIn" />
+      <wsdl:output message="tns:DeletePersonLicenseForFFMSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePersonLicense">
+      <wsdl:input message="tns:UpdatePersonLicenseHttpPostIn" />
+      <wsdl:output message="tns:UpdatePersonLicenseHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersonLicense">
+      <wsdl:input message="tns:DeletePersonLicenseHttpPostIn" />
+      <wsdl:output message="tns:DeletePersonLicenseHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_updateRegId">
+      <wsdl:input message="tns:DMTApp_updateRegIdHttpPostIn" />
+      <wsdl:output message="tns:DMTApp_updateRegIdHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GFFT_updateRegId">
+      <wsdl:input message="tns:GFFT_updateRegIdHttpPostIn" />
+      <wsdl:output message="tns:GFFT_updateRegIdHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveLicense_Tracker">
+      <wsdl:input message="tns:SaveLicense_TrackerHttpPostIn" />
+      <wsdl:output message="tns:SaveLicense_TrackerHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLicense_Tracker">
+      <wsdl:input message="tns:UpdateLicense_TrackerHttpPostIn" />
+      <wsdl:output message="tns:UpdateLicense_TrackerHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_GetRegistrationId">
+      <wsdl:input message="tns:DMTApp_GetRegistrationIdHttpPostIn" />
+      <wsdl:output message="tns:DMTApp_GetRegistrationIdHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_GetLicenseInfo">
+      <wsdl:input message="tns:DMTApp_GetLicenseInfoHttpPostIn" />
+      <wsdl:output message="tns:DMTApp_GetLicenseInfoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EnablePersonLicense">
+      <wsdl:input message="tns:EnablePersonLicenseHttpPostIn" />
+      <wsdl:output message="tns:EnablePersonLicenseHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JGetLicenseDetail">
+      <wsdl:input message="tns:JGetLicenseDetailHttpPostIn" />
+      <wsdl:output message="tns:JGetLicenseDetailHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseDetail">
+      <wsdl:input message="tns:GetLicenseDetailHttpPostIn" />
+      <wsdl:output message="tns:GetLicenseDetailHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTrackerImeiByMobile">
+      <wsdl:input message="tns:UpdateTrackerImeiByMobileHttpPostIn" />
+      <wsdl:output message="tns:UpdateTrackerImeiByMobileHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestOTP">
+      <wsdl:input message="tns:requestOTPHttpPostIn" />
+      <wsdl:output message="tns:requestOTPHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="verifyOTP">
+      <wsdl:input message="tns:verifyOTPHttpPostIn" />
+      <wsdl:output message="tns:verifyOTPHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetValidOrg">
+      <wsdl:input message="tns:GetValidOrgHttpPostIn" />
+      <wsdl:output message="tns:GetValidOrgHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetVastralayaUser">
+      <wsdl:input message="tns:SetVastralayaUserHttpPostIn" />
+      <wsdl:output message="tns:SetVastralayaUserHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseDetailForFFMS">
+      <wsdl:input message="tns:GetLicenseDetailForFFMSHttpPostIn" />
+      <wsdl:output message="tns:GetLicenseDetailForFFMSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchAddress">
+      <wsdl:input message="tns:FetchAddressHttpPostIn" />
+      <wsdl:output message="tns:FetchAddressHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getaddrfortest">
+      <wsdl:input message="tns:getaddrfortestHttpPostIn" />
+      <wsdl:output message="tns:getaddrfortestHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAddress">
+      <wsdl:input message="tns:InsertAddressHttpPostIn" />
+      <wsdl:output message="tns:InsertAddressHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getActivePersonDaily">
+      <wsdl:input message="tns:getActivePersonDailyHttpPostIn" />
+      <wsdl:output message="tns:getActivePersonDailyHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getInactivePersonDaily">
+      <wsdl:input message="tns:getInactivePersonDailyHttpPostIn" />
+      <wsdl:output message="tns:getInactivePersonDailyHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAddressFromOldAddress">
+      <wsdl:input message="tns:UpdateAddressFromOldAddressHttpPostIn" />
+      <wsdl:output message="tns:UpdateAddressFromOldAddressHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersondetails">
+      <wsdl:input message="tns:GetPersondetailsHttpPostIn" />
+      <wsdl:output message="tns:GetPersondetailsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_JInsertVersion">
+      <wsdl:input message="tns:DMTApp_JInsertVersionHttpPostIn" />
+      <wsdl:output message="tns:DMTApp_JInsertVersionHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceSoap" type="tns:WebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertPersonLicense">
+      <soap:operation soapAction="http://tempuri.org/InsertPersonLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPersonLicenseforFFMS">
+      <soap:operation soapAction="http://tempuri.org/InsertPersonLicenseforFFMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_GrahaakLicense">
+      <soap:operation soapAction="http://tempuri.org/Insert_GrahaakLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_GrahaakLicense">
+      <soap:operation soapAction="http://tempuri.org/Update_GrahaakLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePersonLicenseForFFms">
+      <soap:operation soapAction="http://tempuri.org/UpdatePersonLicenseForFFms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersonLicenseForFFMS">
+      <soap:operation soapAction="http://tempuri.org/DeletePersonLicenseForFFMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePersonLicense">
+      <soap:operation soapAction="http://tempuri.org/UpdatePersonLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersonLicense">
+      <soap:operation soapAction="http://tempuri.org/DeletePersonLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_updateRegId">
+      <soap:operation soapAction="http://tempuri.org/DMTApp_updateRegId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GFFT_updateRegId">
+      <soap:operation soapAction="http://tempuri.org/GFFT_updateRegId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveLicense_Tracker">
+      <soap:operation soapAction="http://tempuri.org/SaveLicense_Tracker" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLicense_Tracker">
+      <soap:operation soapAction="http://tempuri.org/UpdateLicense_Tracker" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_GetRegistrationId">
+      <soap:operation soapAction="http://tempuri.org/DMTApp_GetRegistrationId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_GetLicenseInfo">
+      <soap:operation soapAction="http://tempuri.org/DMTApp_GetLicenseInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnablePersonLicense">
+      <soap:operation soapAction="http://tempuri.org/EnablePersonLicense" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JGetLicenseDetail">
+      <soap:operation soapAction="http://tempuri.org/JGetLicenseDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseDetail">
+      <soap:operation soapAction="http://tempuri.org/GetLicenseDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTrackerImeiByMobile">
+      <soap:operation soapAction="http://tempuri.org/UpdateTrackerImeiByMobile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestOTP">
+      <soap:operation soapAction="http://tempuri.org/requestOTP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verifyOTP">
+      <soap:operation soapAction="http://tempuri.org/verifyOTP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValidOrg">
+      <soap:operation soapAction="http://tempuri.org/GetValidOrg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetVastralayaUser">
+      <soap:operation soapAction="http://tempuri.org/SetVastralayaUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseDetailForFFMS">
+      <soap:operation soapAction="http://tempuri.org/GetLicenseDetailForFFMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchAddress">
+      <soap:operation soapAction="http://tempuri.org/FetchAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getaddrfortest">
+      <soap:operation soapAction="http://tempuri.org/getaddrfortest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAddress">
+      <soap:operation soapAction="http://tempuri.org/InsertAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getActivePersonDaily">
+      <soap:operation soapAction="http://tempuri.org/getActivePersonDaily" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInactivePersonDaily">
+      <soap:operation soapAction="http://tempuri.org/getInactivePersonDaily" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAddressFromOldAddress">
+      <soap:operation soapAction="http://tempuri.org/UpdateAddressFromOldAddress" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersondetails">
+      <soap:operation soapAction="http://tempuri.org/GetPersondetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_JInsertVersion">
+      <soap:operation soapAction="http://tempuri.org/DMTApp_JInsertVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceSoap12" type="tns:WebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertPersonLicense">
+      <soap12:operation soapAction="http://tempuri.org/InsertPersonLicense" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPersonLicenseforFFMS">
+      <soap12:operation soapAction="http://tempuri.org/InsertPersonLicenseforFFMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_GrahaakLicense">
+      <soap12:operation soapAction="http://tempuri.org/Insert_GrahaakLicense" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_GrahaakLicense">
+      <soap12:operation soapAction="http://tempuri.org/Update_GrahaakLicense" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePersonLicenseForFFms">
+      <soap12:operation soapAction="http://tempuri.org/UpdatePersonLicenseForFFms" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersonLicenseForFFMS">
+      <soap12:operation soapAction="http://tempuri.org/DeletePersonLicenseForFFMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePersonLicense">
+      <soap12:operation soapAction="http://tempuri.org/UpdatePersonLicense" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersonLicense">
+      <soap12:operation soapAction="http://tempuri.org/DeletePersonLicense" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_updateRegId">
+      <soap12:operation soapAction="http://tempuri.org/DMTApp_updateRegId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GFFT_updateRegId">
+      <soap12:operation soapAction="http://tempuri.org/GFFT_updateRegId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveLicense_Tracker">
+      <soap12:operation soapAction="http://tempuri.org/SaveLicense_Tracker" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLicense_Tracker">
+      <soap12:operation soapAction="http://tempuri.org/UpdateLicense_Tracker" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_GetRegistrationId">
+      <soap12:operation soapAction="http://tempuri.org/DMTApp_GetRegistrationId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_GetLicenseInfo">
+      <soap12:operation soapAction="http://tempuri.org/DMTApp_GetLicenseInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnablePersonLicense">
+      <soap12:operation soapAction="http://tempuri.org/EnablePersonLicense" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JGetLicenseDetail">
+      <soap12:operation soapAction="http://tempuri.org/JGetLicenseDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseDetail">
+      <soap12:operation soapAction="http://tempuri.org/GetLicenseDetail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTrackerImeiByMobile">
+      <soap12:operation soapAction="http://tempuri.org/UpdateTrackerImeiByMobile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestOTP">
+      <soap12:operation soapAction="http://tempuri.org/requestOTP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verifyOTP">
+      <soap12:operation soapAction="http://tempuri.org/verifyOTP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValidOrg">
+      <soap12:operation soapAction="http://tempuri.org/GetValidOrg" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetVastralayaUser">
+      <soap12:operation soapAction="http://tempuri.org/SetVastralayaUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseDetailForFFMS">
+      <soap12:operation soapAction="http://tempuri.org/GetLicenseDetailForFFMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchAddress">
+      <soap12:operation soapAction="http://tempuri.org/FetchAddress" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getaddrfortest">
+      <soap12:operation soapAction="http://tempuri.org/getaddrfortest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAddress">
+      <soap12:operation soapAction="http://tempuri.org/InsertAddress" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getActivePersonDaily">
+      <soap12:operation soapAction="http://tempuri.org/getActivePersonDaily" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInactivePersonDaily">
+      <soap12:operation soapAction="http://tempuri.org/getInactivePersonDaily" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAddressFromOldAddress">
+      <soap12:operation soapAction="http://tempuri.org/UpdateAddressFromOldAddress" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersondetails">
+      <soap12:operation soapAction="http://tempuri.org/GetPersondetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_JInsertVersion">
+      <soap12:operation soapAction="http://tempuri.org/DMTApp_JInsertVersion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceHttpGet" type="tns:WebServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="InsertPersonLicense">
+      <http:operation location="/InsertPersonLicense" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPersonLicenseforFFMS">
+      <http:operation location="/InsertPersonLicenseforFFMS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_GrahaakLicense">
+      <http:operation location="/Insert_GrahaakLicense" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_GrahaakLicense">
+      <http:operation location="/Update_GrahaakLicense" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePersonLicenseForFFms">
+      <http:operation location="/UpdatePersonLicenseForFFms" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersonLicenseForFFMS">
+      <http:operation location="/DeletePersonLicenseForFFMS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePersonLicense">
+      <http:operation location="/UpdatePersonLicense" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersonLicense">
+      <http:operation location="/DeletePersonLicense" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_updateRegId">
+      <http:operation location="/DMTApp_updateRegId" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GFFT_updateRegId">
+      <http:operation location="/GFFT_updateRegId" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveLicense_Tracker">
+      <http:operation location="/SaveLicense_Tracker" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLicense_Tracker">
+      <http:operation location="/UpdateLicense_Tracker" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_GetRegistrationId">
+      <http:operation location="/DMTApp_GetRegistrationId" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_GetLicenseInfo">
+      <http:operation location="/DMTApp_GetLicenseInfo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnablePersonLicense">
+      <http:operation location="/EnablePersonLicense" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="JGetLicenseDetail">
+      <http:operation location="/JGetLicenseDetail" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseDetail">
+      <http:operation location="/GetLicenseDetail" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTrackerImeiByMobile">
+      <http:operation location="/UpdateTrackerImeiByMobile" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestOTP">
+      <http:operation location="/requestOTP" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verifyOTP">
+      <http:operation location="/verifyOTP" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValidOrg">
+      <http:operation location="/GetValidOrg" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetVastralayaUser">
+      <http:operation location="/SetVastralayaUser" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseDetailForFFMS">
+      <http:operation location="/GetLicenseDetailForFFMS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchAddress">
+      <http:operation location="/FetchAddress" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getaddrfortest">
+      <http:operation location="/getaddrfortest" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAddress">
+      <http:operation location="/InsertAddress" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getActivePersonDaily">
+      <http:operation location="/getActivePersonDaily" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="getInactivePersonDaily">
+      <http:operation location="/getInactivePersonDaily" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAddressFromOldAddress">
+      <http:operation location="/UpdateAddressFromOldAddress" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersondetails">
+      <http:operation location="/GetPersondetails" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_JInsertVersion">
+      <http:operation location="/DMTApp_JInsertVersion" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceHttpPost" type="tns:WebServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="InsertPersonLicense">
+      <http:operation location="/InsertPersonLicense" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPersonLicenseforFFMS">
+      <http:operation location="/InsertPersonLicenseforFFMS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_GrahaakLicense">
+      <http:operation location="/Insert_GrahaakLicense" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_GrahaakLicense">
+      <http:operation location="/Update_GrahaakLicense" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePersonLicenseForFFms">
+      <http:operation location="/UpdatePersonLicenseForFFms" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersonLicenseForFFMS">
+      <http:operation location="/DeletePersonLicenseForFFMS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePersonLicense">
+      <http:operation location="/UpdatePersonLicense" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePersonLicense">
+      <http:operation location="/DeletePersonLicense" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_updateRegId">
+      <http:operation location="/DMTApp_updateRegId" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GFFT_updateRegId">
+      <http:operation location="/GFFT_updateRegId" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveLicense_Tracker">
+      <http:operation location="/SaveLicense_Tracker" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLicense_Tracker">
+      <http:operation location="/UpdateLicense_Tracker" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_GetRegistrationId">
+      <http:operation location="/DMTApp_GetRegistrationId" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_GetLicenseInfo">
+      <http:operation location="/DMTApp_GetLicenseInfo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnablePersonLicense">
+      <http:operation location="/EnablePersonLicense" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="JGetLicenseDetail">
+      <http:operation location="/JGetLicenseDetail" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseDetail">
+      <http:operation location="/GetLicenseDetail" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTrackerImeiByMobile">
+      <http:operation location="/UpdateTrackerImeiByMobile" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestOTP">
+      <http:operation location="/requestOTP" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="verifyOTP">
+      <http:operation location="/verifyOTP" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetValidOrg">
+      <http:operation location="/GetValidOrg" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetVastralayaUser">
+      <http:operation location="/SetVastralayaUser" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLicenseDetailForFFMS">
+      <http:operation location="/GetLicenseDetailForFFMS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="Body" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchAddress">
+      <http:operation location="/FetchAddress" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getaddrfortest">
+      <http:operation location="/getaddrfortest" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAddress">
+      <http:operation location="/InsertAddress" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getActivePersonDaily">
+      <http:operation location="/getActivePersonDaily" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="getInactivePersonDaily">
+      <http:operation location="/getInactivePersonDaily" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAddressFromOldAddress">
+      <http:operation location="/UpdateAddressFromOldAddress" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersondetails">
+      <http:operation location="/GetPersondetails" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DMTApp_JInsertVersion">
+      <http:operation location="/DMTApp_JInsertVersion" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService">
+    <wsdl:port name="WebServiceSoap" binding="tns:WebServiceSoap">
+      <soap:address location="http://license.dataman.in/webservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceSoap12" binding="tns:WebServiceSoap12">
+      <soap12:address location="http://license.dataman.in/webservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceHttpGet" binding="tns:WebServiceHttpGet">
+      <http:address location="http://license.dataman.in/webservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceHttpPost" binding="tns:WebServiceHttpPost">
+      <http:address location="http://license.dataman.in/webservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

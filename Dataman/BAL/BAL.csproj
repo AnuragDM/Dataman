@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{047B2A97-3DD9-458A-AF0C-C9002BAE934A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BAL</RootNamespace>
+    <AssemblyName>BAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NReco.VideoConverter">
+      <HintPath>..\packages\NReco.VideoConverter.1.1.2\lib\net20\NReco.VideoConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdvanceReq\AdvanceReqBAL.cs" />
+    <Compile Include="ClassMaster\ClassMasterBAL.cs" />
+    <Compile Include="Competitor\CompetitorBAL.cs" />
+    <Compile Include="ComplaintNature\ComplaintNature.cs" />
+    <Compile Include="CRM\CRMBAL.cs" />
+    <Compile Include="DemoEntry\DemoEntryBAL.cs" />
+    <Compile Include="Department\deptAll.cs" />
+    <Compile Include="DesignationMaster\DesignationBAL.cs" />
+    <Compile Include="Distributer\DistributerCollection.cs" />
+    <Compile Include="Distributor\DistributorBAL.cs" />
+    <Compile Include="DSRLevel1\DSRLevel1BAL.cs" />
+    <Compile Include="DSRLevel3\DSLevel3BAL.cs" />
+    <Compile Include="DSRNarrMaster\DSRNarrBAL.cs" />
+    <Compile Include="EmailSetting\EmailSettings.cs" />
+    <Compile Include="EmailTemplate\EmailTemplateBAL.cs" />
+    <Compile Include="EmployeeCityConvAmt\EmplCityConvAmtBAL.cs" />
+    <Compile Include="ExcelWriter.cs" />
+    <Compile Include="Expenses\ExpenseBAL.cs" />
+    <Compile Include="Expenses\ExpensesGroupBAL.cs" />
+    <Compile Include="FailedVisitRemarks\FailedVisitRemarksBAL.cs" />
+    <Compile Include="Grade\GradeBAL.cs" />
+    <Compile Include="HolidayMaster\HolidayMasterBAL.cs" />
+    <Compile Include="Item\ItemBAL.cs" />
+    <Compile Include="LeaveRequest\LeaveAll.cs" />
+    <Compile Include="Location\CityConveyanceTypeBAL.cs" />
+    <Compile Include="Location\CityTypeBAL.cs" />
+    <Compile Include="Location\LocationBAL.cs" />
+    <Compile Include="MastLink\MastLinkBAL.cs" />
+    <Compile Include="MastRole\mastroleAll.cs" />
+    <Compile Include="MaterialGroup\MaterialGroup.cs" />
+    <Compile Include="MeetTarget\MeetTargetBAL.cs" />
+    <Compile Include="Meet\AddMeetUsersBAL.cs" />
+    <Compile Include="Meet\MeetAttendance.cs" />
+    <Compile Include="Meet\MeetExpenseMaster.cs" />
+    <Compile Include="Meet\MeetPlanEntryBAL.cs" />
+    <Compile Include="Meet\MeetTypeBAL.cs" />
+    <Compile Include="Meet\MeetUserListBAL.cs" />
+    <Compile Include="Meet\SchemeBAL.cs" />
+    <Compile Include="Message\MessageBAL.cs" />
+    <Compile Include="Order\OrderEntryBAL.cs" />
+    <Compile Include="PartyCollection\PartyCollection.cs" />
+    <Compile Include="Party\PartyBAL.cs" />
+    <Compile Include="ProjectMaster\ProjectMasterBAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Prospects\ProspectsBAL.cs" />
+    <Compile Include="PurchaseOrder\PurchaseOrder.cs" />
+    <Compile Include="ResponsibilityCenter\ResCenter.cs" />
+    <Compile Include="SalesPersons\SalesPersonsBAL.cs" />
+    <Compile Include="SalesTarget\SalesTargetBAL.cs" />
+    <Compile Include="SegmentMaster\SegmentBAL.cs" />
+    <Compile Include="TransBeatPlan\BeatPlan.cs" />
+    <Compile Include="TransComplaint\TComplAll.cs" />
+    <Compile Include="TransSuggestion\TSuggAll.cs" />
+    <Compile Include="TransTourPlan\TourAll.cs" />
+    <Compile Include="Travel\LocalConveyanceLimtBAL.cs" />
+    <Compile Include="Travel\LocalLodgingBoardingLimitBAL.cs" />
+    <Compile Include="Travel\TravelEligibilityBAL.cs" />
+    <Compile Include="Travel\TravelModeBAL.cs" />
+    <Compile Include="Uploads\UploadBAL.cs" />
+    <Compile Include="UserMaster\userall.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{beb978f9-ff38-46ea-a154-cb93287a85bc}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

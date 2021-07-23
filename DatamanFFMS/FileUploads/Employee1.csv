@@ -1,0 +1,3 @@
+LoginID*,Password*,Active,Email*,RoleName*,Department*,Designation*,EmpSyncId*,EmployeeName*,CostCentre*
+varchar(100),varchar(20),bit,varchar(50),varchar(50),varchar(50),varchar(50),varchar(30),varchar(50),"decimal(18,2)"
+SH00500,SH00500@123,1,itd@mohanitea.org018,L1,SALES & MARKETING,Sales Representative,SH00500,Santosh Gaur123,0

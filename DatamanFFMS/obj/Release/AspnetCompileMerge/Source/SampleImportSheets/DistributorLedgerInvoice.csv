@@ -1,0 +1,4 @@
+DistInvDocId*,Vdate*,SyncId*,PriceList,ItemCode*,Qty,Rate,Amount,taxPer,Tax_Amt,ExciseAmount,Net_Total,SalesPersonSyncId*,LocationSyncID*,ItemRemarks
+Varchar(30),Datetime(dd/mm/yyyy),varchar(50),varchar(25),varchar(50),"numeric(9,2)","numeric(9,2)","numeric(15,2)","numeric(9,2)","numeric(9,2)","numeric(15,2)","numeric(15,2)",varchar(50),varchar(50),varchar(255)
+1000000003,11/4/2015,9000,,1401,26,168.08,5029.82,,,,828838,9000,10,
+1000000008,11/4/2015,9000,,1401,17500,9.51,196539.87,,,,525985,9000,10,

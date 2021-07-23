@@ -1,0 +1,3 @@
+Parent,PartyName,Address1,Address2,Pin,Mobile,Industry,Potential,Remark,PartyDist,SyncId,Active,PartyType,City,Area,Beat,ContactPerson,Phone,CSTNo,VATTIN,ServiceTaxRegNo,PanNo
+.,test,Birahana road,Birahana road1,208002,9999999999,ARCHITECTS,2000,Test,0,,,Retailer,KANPUR,KNP-SOUTH,TRANSPORT NAGAR-JHAKARKATI,qwe,112345678,12qw,123we,12,qw1234
+.,Abhay enterprises,Nayagunj,Nayagunj1,208001,9999999999,ARCHITECTS,2500,test,0,,,Retailer,KANPUR,KNP-SOUTH,TRANSPORT NAGAR-JHAKARKATI,qwe,112345678,12qw,123we,10,qw1234

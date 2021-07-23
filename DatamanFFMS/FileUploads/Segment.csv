@@ -1,0 +1,6 @@
+Segment*,SyncCode,Active*
+varchar(50),varchar(50),bit
+Item Segment1,,1
+Item Segment2,,1
+Item Segment3,1,1
+Item Segment4,2,1

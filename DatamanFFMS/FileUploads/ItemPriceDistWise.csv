@@ -1,0 +1,11 @@
+DistributorSynchid*,ItemSyncCode*,DistributorPrice*
+varchar(50),varchar(50),"numeric(18,2)"
+1017,FG000001,200
+1017,55888,120
+3028,FG000001,200
+8777,233,112.5
+3028,234,300
+3028,5,350
+3039,FG000001,400
+3039,225,450
+3039,232,500

@@ -1,0 +1,10 @@
+PlantName*,PlantCode*,PlantType*,OrderType*,DivCode*,SyncId*,Active
+varchar(100),varchar(50),varchar(50),varchar(50),Int,varchar(50),bit
+astral factory,aa,Factory,aaaaa,10,10,1
+dholka,bb,Warehouse,bbbbb,11,11,1
+hosur,cc,Warehouse,ccccc,12,12,1
+baddi,dd,Warehouse,ddddd,13,13,1
+santej trd depot,ee,Warehouse,eeeee,14,14,1
+dholka trd depot,ff,Warehouse,fffff,15,15,1
+head office,gg,Warehouse,ggggg,16,16,1
+banglore depot,hh,Warehouse,hhhhh,17,17,1
